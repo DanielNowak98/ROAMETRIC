@@ -35,4 +35,4 @@ npm run dev
 npm run build
 ```
 
-Das zentrale Hero-Motiv liegt unter `public/assets/roametric-hero.png`. Layout und Farbwelt befinden sich in `app/globals.css`; Inhalte und Produktdaten in `app/page.tsx`, `app/data.ts` und `app/ui.tsx`.
+Das zentrale Hero-Motiv liegt unter `public/assets/roametric-hero.png`. Die offiziellen ROAMETRIC-Logos befinden sich als SVG, PNG, weiße PNG-Variante und JPG ebenfalls unter `public/assets/`. Layout und Farbwelt befinden sich in `app/globals.css` und `app/logo.css`; Inhalte und Produktdaten in `app/page.tsx`, `app/data.ts` und `app/ui.tsx`.
