@@ -6,7 +6,7 @@ import { products } from '../data';
 
 export default function CheckoutPage(){
   const[items,setItems]=useState<CartItem[]>([]);const[shipping,setShipping]=useState('standard');const[done,setDone]=useState(false);const[orderNo,setOrderNo]=useState('');
-  useEffect(()=>setItems(readCart()),[]);const subtotal=cartTotal(items);const shippingCost=shipping==='express'?9.9:(subtotal>=75?0:4.9);const total=subtotal+shippingCost;
+  useEffect(()=>{const timer=window.setTimeout(()=>setItems(readCart()),0);return()=>window.clearTimeout(timer)},[]);const subtotal=cartTotal(items);const shippingCost=shipping==='express'?9.9:(subtotal>=75?0:4.9);const total=subtotal+shippingCost;
   function submit(e:FormEvent){e.preventDefault();setOrderNo(`RM-${new Date().getFullYear()}-${Math.floor(10000+Math.random()*90000)}`);clearCart();setDone(true);window.scrollTo({top:0,behavior:'smooth'});}
   if(done)return <><Header/><main className="confirmation shell"><span className="confirm-mark">✓</span><p className="eyebrow">BESTELLUNG ERFASST</p><h1>DANKE FÜR<br/>DEINE BESTELLUNG.</h1><p>Deine lokale Demo-Bestellung <b>{orderNo}</b> wurde erfolgreich erstellt.</p><div className="demo-note"><b>Demo-Modus</b><span>Es wurde keine Zahlung ausgelöst und keine Bestellung an einen Server übertragen.</span></div><Link href="/shop" className="button amber">Weiter einkaufen →</Link></main><Footer/></>;
   if(!items.length)return <><Header/><main className="empty-page checkout-empty shell"><h1>Dein Warenkorb ist leer.</h1><p>Lege zuerst ein Produkt in den Warenkorb.</p><Link href="/shop" className="button amber">Zum Shop →</Link></main><Footer/></>;
