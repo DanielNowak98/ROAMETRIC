@@ -1,6 +1,6 @@
 # ROAMETRIC Website + Shop-Demo
 
-Responsive lokale Website für ROAMETRIC mit Startseite, Shop-Übersicht, Produktdetailseiten und lokal gespeichertem Demo-Warenkorb.
+Responsive lokale Website für ROAMETRIC mit Startseite, filterbarem Produktkatalog, Produktdetailseiten, dauerhaftem Warenkorb und lokalem Demo-Checkout.
 
 ## Schnellstart
 
@@ -17,10 +17,12 @@ Die Seite öffnet sich unter **http://localhost:3000**. Zum Beenden im Terminal 
 - `/` — Startseite mit Hero, Kategorien, Produkten, Engineering und USPs
 - `/shop` — Shop-Übersicht mit Filtern und Produktkarten
 - `/produkt/railhook-modular` — Beispiel einer Produktdetailseite
+- `/warenkorb` — Warenkorb mit Mengensteuerung, Versandgrenze und Bestellsumme
+- `/checkout` — Lieferadresse, Versandart, Zusammenfassung und lokale Bestellbestätigung
 
 ## Hinweis zum Shop
 
-Dies ist eine vollständige Frontend-Demo. Warenkorb-Buttons und Zähler funktionieren lokal. Bezahlung, Versandberechnung, Benutzerkonten und echte Bestellungen benötigen später ein Shopsystem bzw. eine Backend-Anbindung.
+Dies ist ein vollständiges Shop-Frontend. Filter, Sortierung, Warenkorb, Mengen, Versandkosten, Checkout-Formular und Bestellbestätigung funktionieren lokal. Der Warenkorb bleibt im Browser gespeichert. Der Checkout überträgt bewusst keine persönlichen Daten und löst keine echte Zahlung aus. Für den Live-Betrieb muss anschließend ein Zahlungs- und Bestell-Backend wie Stripe, PayPal oder Shopify angebunden werden.
 
 ## Manuell starten
 

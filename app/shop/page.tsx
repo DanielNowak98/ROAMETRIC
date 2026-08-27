@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Footer, Header, ProductCard } from '../ui';
-import { products } from '../data';
+import { Footer, Header } from '../ui';
+import ShopCatalog from '../shop-client';
 export const metadata: Metadata = {title:'Shop'};
-export default function Shop(){return <><Header/><main className="shop-page"><section className="shop-hero shell"><p className="eyebrow">ROAMETRIC SHOP</p><h1>ENGINEERED PARTS.<br/><span>READY TO ROAM.</span></h1><p>Funktionale Produkte für deinen Ausbau, dein Setup und dein nächstes Abenteuer.</p></section><section className="shop-content shell"><aside className="filters"><div><b>KATEGORIE</b>{['Alle Produkte','Van','Marine','Bike','Outdoor'].map((x,i)=><label key={x}><input type="radio" name="cat" defaultChecked={i===0}/><span>{x}</span></label>)}</div><div><b>MATERIAL</b>{['PA12','PETG-CF','ASA','TPU'].map(x=><label key={x}><input type="checkbox"/><span>{x}</span></label>)}</div></aside><div className="catalog"><div className="catalog-bar"><span>{products.length} PRODUKTE</span><select aria-label="Sortierung"><option>Empfohlen</option><option>Preis aufsteigend</option><option>Neuheiten</option></select></div><div className="product-grid">{products.map(p=><ProductCard key={p.slug} product={p}/>)}</div></div></section></main><Footer/></>}
+export default function Shop(){return <><Header/><main className="shop-page"><section className="shop-hero shell"><p className="eyebrow">ROAMETRIC SHOP</p><h1>ENGINEERED PARTS.<br/><span>READY TO ROAM.</span></h1><p>Funktionale Produkte für deinen Ausbau, dein Setup und dein nächstes Abenteuer.</p></section><ShopCatalog/></main><Footer/></>}
