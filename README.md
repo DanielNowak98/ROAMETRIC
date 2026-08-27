@@ -1,6 +1,6 @@
-# ROAMETRIC Website + Stripe-Shop
+# ROAMETRIC Website + Shop-Demo
 
-Responsive Website für ROAMETRIC mit Startseite, filterbarem Produktkatalog, Produktdetailseiten, dauerhaftem Warenkorb und sicherem Stripe Checkout für PayPal, Karten und Wallets.
+Responsive lokale Website für ROAMETRIC mit Startseite, filterbarem Produktkatalog, Produktdetailseiten, dauerhaftem Warenkorb und lokalem Demo-Checkout.
 
 ## Schnellstart
 
@@ -18,27 +18,11 @@ Die Seite öffnet sich unter **http://localhost:3000**. Zum Beenden im Terminal 
 - `/shop` — Shop-Übersicht mit Filtern und Produktkarten
 - `/produkt/railhook-modular` — Beispiel einer Produktdetailseite
 - `/warenkorb` — Warenkorb mit Mengensteuerung, Versandgrenze und Bestellsumme
-- `/checkout` — Versandart, Bestellübersicht und Weiterleitung zur sicheren Zahlung
-- `/checkout/erfolg` — serverseitig geprüfte Zahlungs- und Bestellbestätigung
+- `/checkout` — Lieferadresse, Versandart, Zusammenfassung und lokale Bestellbestätigung
 
-## Stripe im Testmodus einrichten
+## Hinweis zum Shop
 
-1. Bei [Stripe](https://dashboard.stripe.com/register) ein Konto anlegen und den **Testmodus** aktivieren.
-2. Unter **Einstellungen → Zahlungsmethoden** PayPal und die gewünschten Karten/Wallets aktivieren. Welche Methode Stripe tatsächlich anzeigt, hängt von Konto, Standort, Währung und Gerät ab.
-3. `.env.example` als `.env.local` kopieren und dort den Stripe-Testschlüssel eintragen. Geheimschlüssel niemals in GitHub hochladen.
-4. Für lokale Webhooks die Stripe CLI verwenden und Ereignisse an `http://localhost:3000/api/stripe/webhook` weiterleiten. Das dabei ausgegebene `whsec_...` kommt in `STRIPE_WEBHOOK_SECRET`.
-5. Für den Live-Betrieb denselben Endpunkt unter der echten HTTPS-Domain im Stripe Dashboard als Webhook anlegen.
-
-Benötigte Webhook-Ereignisse:
-
-- `checkout.session.completed`
-- `checkout.session.async_payment_succeeded`
-- `checkout.session.async_payment_failed`
-- `checkout.session.expired`
-
-Die Website berechnet alle Preise serverseitig neu, erstellt die Stripe-Zahlungsseite und speichert Bestellungen in der angebundenen D1-Datenbank. Zahlungsdaten und PayPal-Zugangsdaten werden nicht von ROAMETRIC verarbeitet. Der Warenkorb wird erst nach bestätigter Zahlung geleert.
-
-Vor dem Livegang müssen Impressum, Datenschutz, AGB, Widerrufsbelehrung, Versandbedingungen und Steuerangaben rechtlich geprüft und mit echten Inhalten hinterlegt werden.
+Dies ist ein vollständiges Shop-Frontend. Filter, Sortierung, Warenkorb, Mengen, Versandkosten, Checkout-Formular und Bestellbestätigung funktionieren lokal. Der Warenkorb bleibt im Browser gespeichert. Der Checkout überträgt bewusst keine persönlichen Daten und löst keine echte Zahlung aus. Für den Live-Betrieb muss anschließend ein Zahlungs- und Bestell-Backend wie Stripe, PayPal oder Shopify angebunden werden.
 
 ## Manuell starten
 
