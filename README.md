@@ -20,6 +20,8 @@ Die Seite öffnet sich unter **http://localhost:3000**. Zum Beenden im Terminal 
 - `/warenkorb` — Warenkorb mit Mengensteuerung, Versandgrenze und Bestellsumme
 - `/checkout` — Versandart, Bestellübersicht und Weiterleitung zur sicheren Zahlung
 - `/checkout/erfolg` — serverseitig geprüfte Zahlungs- und Bestellbestätigung
+- `/admin` — geschützter Zugang zur internen Bestellverwaltung
+- `/admin/bestellungen` — Zahlungsstatus, Bearbeitung, Versand und E-Mail-Status
 
 ## Stripe im Testmodus einrichten
 
@@ -37,6 +39,28 @@ Benötigte Webhook-Ereignisse:
 - `checkout.session.expired`
 
 Die Website berechnet alle Preise serverseitig neu, erstellt die Stripe-Zahlungsseite und speichert Bestellungen in der angebundenen D1-Datenbank. Zahlungsdaten und PayPal-Zugangsdaten werden nicht von ROAMETRIC verarbeitet. Der Warenkorb wird erst nach bestätigter Zahlung geleert.
+
+## Bestellverwaltung einrichten
+
+1. In `.env.local` ein starkes `ADMIN_PASSWORD` mit mindestens 12 Zeichen setzen.
+2. Für `ADMIN_SESSION_SECRET` eine separate zufällige Zeichenfolge mit mindestens 32 Zeichen verwenden.
+3. Danach `/admin` öffnen und mit dem Admin-Kennwort anmelden. Die Sitzung wird für 12 Stunden in einem signierten, nicht durch JavaScript lesbaren Cookie gespeichert.
+4. Bezahlte Bestellungen können auf „In Bearbeitung“, „Versendet“ oder „Storniert“ gesetzt werden. Stripe-Zahlungsstatus lassen sich im Adminbereich bewusst nicht verändern.
+5. Beim erstmaligen Status „Versendet“ werden Versanddienstleister, Sendungsnummer und Tracking-Link gespeichert.
+
+Nach fünf falschen Anmeldeversuchen wird der Zugang für die jeweilige Verbindung 15 Minuten gesperrt. Zugangswerte gehören ausschließlich in `.env.local` beziehungsweise in die geschützten Umgebungsvariablen des Hostings und niemals in GitHub.
+
+## E-Mails einrichten
+
+Automatische Bestell- und Versandbestätigungen werden optional über die HTTPS-API von Resend versendet. Dafür in `.env.local` ergänzen:
+
+```text
+RESEND_API_KEY=re_...
+ORDER_FROM_EMAIL=ROAMETRIC Shop <shop@deine-domain.de>
+ORDER_REPLY_TO=hello@deine-domain.de
+```
+
+Die Absenderdomain muss beim E-Mail-Anbieter verifiziert sein. Ohne diese Angaben funktionieren Checkout und Bestellverwaltung weiterhin; der E-Mail-Status bleibt dann „ausstehend“. Bestellbestätigungen werden erst nach bestätigter Stripe-Zahlung verschickt. Versandbestätigungen werden je Bestellung nur beim ersten erfolgreichen Versandstatus ausgelöst.
 
 Vor dem Livegang müssen Impressum, Datenschutz, AGB, Widerrufsbelehrung, Versandbedingungen und Steuerangaben rechtlich geprüft und mit echten Inhalten hinterlegt werden.
 

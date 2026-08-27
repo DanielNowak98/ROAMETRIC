@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { updateOrderFromStripe } from '../../../../lib/orders';
 import { type StripeCheckoutSession, verifyStripeWebhook } from '../../../../lib/stripe';
+import { deliverOrderEmail } from '../../../../lib/email';
 
 export const runtime = 'edge';
 
@@ -23,14 +24,16 @@ export async function POST(request: Request) {
     ];
     if (accepted.includes(event.type)) {
       const session = event.data.object;
-      await updateOrderFromStripe({
+      const status = statusForEvent(event.type, session);
+      const order = await updateOrderFromStripe({
         stripeSessionId: session.id,
-        status: statusForEvent(event.type, session),
+        status,
         amountTotal: session.amount_total,
         currency: session.currency,
         customerEmail: session.customer_details?.email,
         shippingDetails: session.collected_information?.shipping_details || session.shipping_details,
       });
+      if (status === 'paid' && order) await deliverOrderEmail(order, 'confirmation');
     }
     return NextResponse.json({ received: true });
   } catch (error) {
