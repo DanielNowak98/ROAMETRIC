@@ -18,6 +18,13 @@
   width: fit-content;
 }
 
+.nav-actions .cart {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
 @media (max-width: 560px) {
   .brand-logo-header {
     width: 88px;
