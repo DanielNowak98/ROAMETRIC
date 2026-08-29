@@ -1,0 +1,100 @@
+name: Produkt entwickeln
+description: Vollständige Checkliste für ein neues oder bestehendes ROAMETRIC Produkt
+title: "[PRODUKT] "
+body:
+  - type: input
+    id: produktname
+    attributes:
+      label: Produktname
+      placeholder: z. B. Canyon Bike Toolbox V2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kategorie
+    attributes:
+      label: Kategorie
+      options:
+        - Van
+        - Marine
+        - Bike
+        - Outdoor
+    validations:
+      required: true
+
+  - type: dropdown
+    id: prioritaet
+    attributes:
+      label: Priorität
+      options:
+        - Hoch
+        - Mittel
+        - Niedrig
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: produktdaten
+    attributes:
+      label: Produktdaten
+      options:
+        - label: Finaler Produktname ist festgelegt
+        - label: Verkaufspreis ist bestätigt
+        - label: Material ist bestätigt
+        - label: Abmessungen sind dokumentiert
+        - label: Gewicht ist dokumentiert
+        - label: Varianten und Farben sind festgelegt
+        - label: Produktions- und Lieferzeit sind festgelegt
+        - label: Lieferumfang ist beschrieben
+
+  - type: checkboxes
+    id: kompatibilitaet
+    attributes:
+      label: Kompatibilität und Montage
+      options:
+        - label: Passende Modelle oder Einsatzbereiche sind dokumentiert
+        - label: Ausschlüsse und Einschränkungen sind dokumentiert
+        - label: Benötigte Einbaumaße sind angegeben
+        - label: Befestigungsmaterial ist festgelegt
+        - label: Montageanleitung ist erstellt
+
+  - type: checkboxes
+    id: qualitaet
+    attributes:
+      label: Qualität und Prüfung
+      options:
+        - label: Prototyp wurde gefertigt
+        - label: Passform wurde geprüft
+        - label: Belastung und Vibration wurden geprüft
+        - label: Montage wurde praktisch getestet
+        - label: Bekannte Einschränkungen sind dokumentiert
+
+  - type: checkboxes
+    id: website
+    attributes:
+      label: Website und Shop
+      options:
+        - label: Haupt-Rendering ist vorhanden
+        - label: Weitere Perspektiven sind vorhanden
+        - label: Einbaubild ist vorhanden
+        - label: Technische Zeichnung ist vorhanden
+        - label: Produktbeschreibung ist freigegeben
+        - label: Produktseite wurde auf Mobilgerät geprüft
+        - label: Testbestellung wurde erfolgreich durchgeführt
+
+  - type: checkboxes
+    id: freigabe
+    attributes:
+      label: Freigabe
+      options:
+        - label: Preis wurde final freigegeben
+        - label: Inhalt und Bilder wurden final freigegeben
+        - label: Versanddaten wurden geprüft
+        - label: Produkt darf veröffentlicht werden
+
+  - type: textarea
+    id: notizen
+    attributes:
+      label: Offene Punkte und Notizen
+      placeholder: Entscheidungen, Messergebnisse, Links oder Rückfragen
+

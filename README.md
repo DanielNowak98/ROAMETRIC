@@ -2,6 +2,8 @@
 
 Responsive Website für ROAMETRIC mit Startseite, filterbarem Produktkatalog, Produktdetailseiten, dauerhaftem Warenkorb und sicherem Stripe Checkout für PayPal, Karten und Wallets.
 
+Die aktuelle Produkt- und Freigabeplanung steht in [`PRODUKT-TODOS.md`](PRODUKT-TODOS.md). Neue Produkte können über die GitHub-Issue-Vorlage **Produkt entwickeln** mit einer vollständigen Checkliste angelegt werden.
+
 ## Schnellstart
 
 Voraussetzung ist die aktuelle LTS-Version von [Node.js](https://nodejs.org/).
