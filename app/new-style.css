@@ -40,3 +40,6 @@ footer{background:#0d1212;padding-top:60px}.footer-grid{max-width:1440px}.brand-
 .checkout-thumb{background-repeat:no-repeat;background-size:200% 200%;background-color:#e9e4db}
 .admin-wordmark{display:block;width:190px;height:62px;background:url('/assets/roametric-logo.svg') center/contain no-repeat;filter:brightness(0) invert(1);font-size:0}
 .admin-topbar .admin-wordmark{width:160px;height:54px}
+
+/* Keep the bicycle visible while retaining the floating category rail. */
+@media(min-width:901px){.hero{overflow:visible;margin-bottom:142px}.category-rail{bottom:-142px}}
