@@ -16,7 +16,7 @@ Die Seite öffnet sich unter **http://localhost:3000**. Zum Beenden im Terminal 
 
 - `/` — Startseite mit Hero, Kategorien, Produkten, Engineering und USPs
 - `/shop` — Shop-Übersicht mit Filtern und Produktkarten
-- `/produkt/railhook-modular` — Beispiel einer Produktdetailseite
+- `/produkt/canyon-bike-toolbox-v2` — Beispiel einer Produktdetailseite mit realem PA12-Rendering
 - `/warenkorb` — Warenkorb mit Mengensteuerung, Versandgrenze und Bestellsumme
 - `/checkout` — Versandart, Bestellübersicht und Weiterleitung zur sicheren Zahlung
 - `/checkout/erfolg` — serverseitig geprüfte Zahlungs- und Bestellbestätigung
@@ -77,4 +77,4 @@ npm run dev
 npm run build
 ```
 
-Das zentrale Hero-Motiv liegt unter `public/assets/roametric-hero.png`. Die offiziellen ROAMETRIC-Logos befinden sich als SVG, PNG, weiße PNG-Variante und JPG ebenfalls unter `public/assets/`. Layout und Farbwelt befinden sich in `app/globals.css` und `app/logo.css`; Inhalte und Produktdaten in `app/page.tsx`, `app/data.ts` und `app/ui.tsx`.
+Das zentrale Hero-Motiv liegt unter `public/assets/roametric-hero.png`. Die offiziellen ROAMETRIC-Logos befinden sich als SVG, PNG, weiße PNG-Variante und JPG ebenfalls unter `public/assets/`. Die realen PA12-Produktdarstellungen liegen WebP-optimiert unter `public/assets/products/`. Layout und Farbwelt befinden sich in `app/globals.css`, `app/logo.css` und `app/new-style.css`; Inhalte und Produktdaten in `app/page.tsx`, `app/data.ts` und `app/ui.tsx`.

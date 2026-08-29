@@ -9,7 +9,11 @@ const CART_KEY = 'roametric-cart-v2';
 
 export function readCart(): CartItem[] {
   if (typeof window === 'undefined') return [];
-  try { return JSON.parse(localStorage.getItem(CART_KEY) || '[]'); } catch { return []; }
+  try {
+    const stored = JSON.parse(localStorage.getItem(CART_KEY) || '[]') as CartItem[];
+    if (!Array.isArray(stored)) return [];
+    return stored.filter((item) => products.some((product) => product.slug === item.slug) && Number.isInteger(item.quantity) && item.quantity > 0);
+  } catch { return []; }
 }
 function storeCart(items: CartItem[], open = false) {
   localStorage.setItem(CART_KEY, JSON.stringify(items));
@@ -45,6 +49,6 @@ export function Header() {
   return <><header className="site-header"><div className="shell nav"><Link href="/" className="brand" aria-label="ROAMETRIC Startseite"><Image className="brand-logo brand-logo-header" src="/assets/roametric-logo.svg" alt="ROAMETRIC" width={170} height={62} priority unoptimized/></Link><nav className={menu?'open':''}><Link href="/shop">Shop</Link><Link href="/shop">Kategorien</Link><Link href="/#engineering">Engineering</Link><Link href="/ueber-uns">Über uns</Link><a href="mailto:hello@roametric.de">Kontakt</a></nav><div className="nav-actions"><button aria-label="Suche">⌕</button><span className="account-icon" aria-hidden="true">○</span><Link className="cart" href="/warenkorb" onClick={(event)=>{event.preventDefault();sync();setDrawer(true)}} aria-label={`${count} Artikel im Warenkorb öffnen`}>BAG <span>{count}</span></Link><button className="menu" onClick={()=>setMenu(!menu)} aria-label="Menü">{menu?'×':'☰'}</button></div></div></header><CartDrawer open={drawer} close={()=>setDrawer(false)} items={items} sync={sync}/></>
 }
 export function Footer(){return <footer><div className="shell footer-grid"><div><Link href="/" className="brand footer-brand" aria-label="ROAMETRIC Startseite"><Image className="brand-logo brand-logo-footer" src="/assets/roametric-logo.svg" alt="ROAMETRIC" width={178} height={115} unoptimized/></Link><p>Engineered parts for moving life.</p></div><div><b>SHOP</b><Link href="/shop">Alle Produkte</Link><Link href="/shop?category=van">Van</Link><Link href="/shop?category=marine">Marine</Link></div><div><b>ROAMETRIC</b><Link href="/ueber-uns">Über uns</Link><Link href="/#engineering">Engineering</Link><a href="mailto:engineering@roametric.de">Custom Parts</a></div><div><b>KONTAKT</b><a href="mailto:hello@roametric.de">hello@roametric.de</a><span>Deutschland</span></div></div><div className="shell footer-bottom"><span>© 2026 ROAMETRIC</span><span>Impressum · Datenschutz · AGB</span></div></footer>}
-export function ProductVisual({p,large=false}:{p:Product;large?:boolean}){return <div className={`product-visual ${large?'large':''}`}><div className="product-photo" style={{backgroundImage:`url('/assets/roametric-products-new-style${p.imageSheet===2?'-2':''}.png')`,backgroundPosition:p.imagePosition}}/><em>{p.material}</em></div>}
+export function ProductVisual({p,large=false}:{p:Product;large?:boolean}){return <div className={`product-visual ${large?'large':''}`}><div className="product-photo" style={{backgroundImage:`url('${p.image}')`,backgroundPosition:p.imagePosition||'center',backgroundSize:p.imageSize||'cover'}}/><em>{p.material}</em></div>}
 export function ProductCard({product:p}:{product:Product}){return <article className="product-card"><Link href={`/produkt/${p.slug}`}><ProductVisual p={p}/></Link><div className="product-info"><p>{p.category.toUpperCase()}</p><Link href={`/produkt/${p.slug}`}><h3>{p.name}</h3></Link><strong>{formatPrice(p.price)}</strong><button onClick={()=>addToCart(p.slug)} aria-label={`${p.name} in den Warenkorb`}>In den Warenkorb</button></div>{p.badge&&<span className="badge">{p.badge}</span>}</article>}
 export { CartRows };

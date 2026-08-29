@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const title = product.name;
   const description = `${product.desc} Gefertigt aus ${product.material} für ${product.category}.`;
   const origin = runtimeValue('SITE_URL');
-  const imagePath = `/assets/roametric-products-new-style${product.imageSheet === 2 ? '-2' : ''}.png`;
+  const imagePath = product.image;
   const image = origin ? new URL(imagePath, origin).toString() : undefined;
   return { title, description, openGraph: { title, description, images: image ? [{ url: image, alt: product.name }] : [] }, twitter: { card: 'summary_large_image', title, description, images: image ? [image] : [] } };
 }
