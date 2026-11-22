@@ -60,7 +60,7 @@ Diese Datei ist die sofort nutzbare Übersicht. Für die tägliche Bearbeitung s
 ## Gemeinsame Shop-Freigabe
 
 - [ ] Finale Versandkosten festlegen
-- [ ] Stripe-Testbestellung für jedes Produkt durchführen
+- [ ] Produktanfrage per E-Mail für jedes Produkt testen
 - [ ] Bestellbestätigung kontrollieren
 - [ ] Bestellverwaltung und Versandstatus kontrollieren
 - [ ] Impressum, Datenschutz, AGB und Widerruf verlinken

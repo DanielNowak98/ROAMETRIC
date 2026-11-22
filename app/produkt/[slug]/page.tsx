@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { runtimeValue } from '../../../lib/runtime';
 import { products } from '../../data';
 import ProductClient from './product-client';
 
@@ -12,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!product) return { title: 'Produkt nicht gefunden', openGraph: { images: [] }, twitter: { images: [] } };
   const title = product.name;
   const description = `${product.desc} Gefertigt aus ${product.material} für ${product.category}.`;
-  const origin = runtimeValue('SITE_URL');
+  const origin = process.env.SITE_URL;
   const imagePath = product.image;
   const image = origin ? new URL(imagePath, origin).toString() : undefined;
   return { title, description, openGraph: { title, description, images: image ? [{ url: image, alt: product.name }] : [] }, twitter: { card: 'summary_large_image', title, description, images: image ? [image] : [] } };
