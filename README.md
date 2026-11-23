@@ -20,6 +20,7 @@ Die Seite öffnet sich unter **http://localhost:3000**. Zum Beenden im Terminal 
 - `/shop` — Produktübersicht mit Filtern und Produktkarten
 - `/produkt/canyon-bike-toolbox-v2` — Beispiel einer Produktdetailseite mit Anfrage-Button
 - `/ueber-uns` — Über ROAMETRIC
+- `/anfrage` — Anfrageliste: ausgewählte Produkte, Mengen und Kontaktdaten; erzeugt eine vorbereitete E-Mail an hello@roametric.de (keine Daten auf dem Server)
 
 Vor dem Livegang müssen Impressum und Datenschutz rechtlich geprüft und mit echten Inhalten hinterlegt werden.
 
