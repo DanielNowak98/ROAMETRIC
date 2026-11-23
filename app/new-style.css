@@ -43,3 +43,14 @@ footer{background:#0d1212;padding-top:60px}.footer-grid{max-width:1440px}.brand-
 
 /* Keep the bicycle visible while retaining the floating category rail. */
 @media(min-width:901px){.hero{overflow:visible;margin-bottom:142px}.category-rail{bottom:-142px}}
+
+/* Kategorien & Platzhalterbilder */
+.category-tabs{display:flex;flex-wrap:wrap;gap:8px;padding:28px 0 6px}
+.category-tabs button{border:1px solid var(--line);background:transparent;color:var(--ink);padding:10px 18px;font:inherit;font-size:12px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.category-tabs button.active,.category-tabs button:hover{background:var(--ink);color:#f6f2eb;border-color:var(--ink)}
+.category-intro{color:var(--muted);max-width:560px;margin:12px 0 0;font-size:15px;line-height:1.6}
+.category-section:nth-of-type(even){background:#efe9df}
+.product-photo-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:repeating-linear-gradient(135deg,#ded6c9 0 12px,#e6dfd3 12px 24px);color:#4a4a44}
+.product-photo-placeholder span{font-size:22px;font-weight:650;letter-spacing:.08em;text-transform:uppercase}
+.product-photo-placeholder small{font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+.card-more{display:inline-block;margin-top:10px;font-size:12px;letter-spacing:.08em;text-transform:uppercase}

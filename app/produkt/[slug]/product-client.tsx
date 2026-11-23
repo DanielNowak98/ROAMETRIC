@@ -1,14 +1,14 @@
 'use client';
 
 import Link from 'next/link';
-import type { Product } from '../../data';
+import { categorySlug, type Product } from '../../data';
 import { Footer, Header, ProductVisual } from '../../ui';
 
 export default function ProductClient({ product: p }: { product: Product }) {
   return <>
     <Header/>
     <main className="detail shell">
-      <div className="breadcrumbs"><Link href="/shop">Shop</Link> / <Link href={`/shop?category=${p.category.toLowerCase()}`}>{p.category}</Link> / {p.name}</div>
+      <div className="breadcrumbs"><Link href="/shop">Produkte</Link> / <Link href={`/shop?category=${categorySlug(p.category)}`}>{p.category}</Link> / {p.name}</div>
       <div className="detail-grid">
         <div className="gallery">
           <div className="gallery-layout">
@@ -31,7 +31,7 @@ export default function ProductClient({ product: p }: { product: Product }) {
           <p className="stock"><i/> Bestellung aktuell auf Anfrage per E-Mail</p>
         </div>
       </div>
-      <div className="product-tabs"><b>Beschreibung</b><span>Zusätzliche Informationen</span><span>Bewertungen (4)</span></div>
+      <div className="product-tabs"><b>Beschreibung</b></div>
       <div className="product-description"><p>Die ROAMETRIC {p.name} ermöglicht eine stabile und flexible Lösung in deinem Setup. Ideal für Ordnung, Stauraum und individuelle Aufbauten.</p><dl><div><dt>Material</dt><dd>{p.material}</dd></div><div><dt>Fertigung</dt><dd>Additive Manufacturing</dd></div><div><dt>Herkunft</dt><dd>Deutschland</dd></div></dl></div>
     </main>
     <Footer/>
