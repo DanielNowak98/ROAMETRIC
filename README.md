@@ -41,3 +41,7 @@ npm run start   # Node-Server auf Port 3000
 Optional in `.env.local`: `SITE_URL` (öffentliche Adresse, z. B. für Open-Graph-Bilder).
 
 Das zentrale Hero-Motiv liegt unter `public/assets/roametric-hero.png`. Die offiziellen ROAMETRIC-Logos befinden sich als SVG, PNG, weiße PNG-Variante und JPG ebenfalls unter `public/assets/`. Die realen PA12-Produktdarstellungen liegen WebP-optimiert unter `public/assets/products/`. Layout und Farbwelt befinden sich in `app/globals.css`, `app/logo.css` und `app/new-style.css`; Inhalte und Produktdaten in `app/page.tsx`, `app/data.ts` und `app/ui.tsx`.
+
+## Bildnachweis
+
+- `public/assets/hero-bjj.webp`: Foto von Pavel Bekker (@pmbekker) auf Unsplash, ID `03ctT4yu-ro`, Unsplash-Lizenz.

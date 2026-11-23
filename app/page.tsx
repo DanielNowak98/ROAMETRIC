@@ -9,7 +9,7 @@ export default function Home() {
     <Header />
     <main>
       <section className="hero">
-        <div className="hero-media" /><div className="hero-shade" />
+        <div className="hero-media hero-collage" aria-hidden="true">{categories.map((category) => <div key={category.slug} className={`hero-tile hero-tile-${category.slug}`}/>)}</div><div className="hero-shade" />
         <div className="hero-content shell"><div className="hero-brand"><Image src="/assets/roametric-logo.svg" alt="ROAMETRIC" width={430} height={278} priority unoptimized/><p>PRECISION FOR THE JOURNEY</p></div></div>
         <div className="category-rail shell">{categories.map((category) => <Link href={`/shop?category=${category.slug}`} key={category.slug}><span className="category-line-icon">{category.icon}</span><h2>{category.name}</h2><p>{category.kicker}</p><b>ENTDECKEN</b></Link>)}</div>
       </section>

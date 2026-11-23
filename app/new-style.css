@@ -54,3 +54,14 @@ footer{background:#0d1212;padding-top:60px}.footer-grid{max-width:1440px}.brand-
 .product-photo-placeholder span{font-size:22px;font-weight:650;letter-spacing:.08em;text-transform:uppercase}
 .product-photo-placeholder small{font-size:10px;letter-spacing:.2em;text-transform:uppercase}
 .card-more{display:inline-block;margin-top:10px;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+
+/* Hero: Vier-Welten-Collage (BJJ, Fahrrad, Van, Boot) */
+.hero-media.hero-collage{background:#111;display:grid;grid-template-columns:repeat(4,1fr)}
+.hero-tile{position:relative;background-image:url('/assets/roametric-hero-new-style.png');background-repeat:no-repeat;background-size:auto 100%;border-right:1px solid #ffffff1a}
+.hero-tile:last-child{border-right:0}
+.hero-tile-bjj{background-image:url('/assets/hero-bjj.webp');background-size:cover;background-position:center 35%;filter:grayscale(1) contrast(1.05) brightness(.78)}
+.hero-tile-fahrrad{background-position:38% 48%}
+.hero-tile-van{background-position:12% 48%}
+.hero-tile-boot{background-position:80% 48%}
+@media(max-width:900px){.hero-media.hero-collage{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;bottom:auto;height:570px}.hero-tile{border-bottom:1px solid #ffffff1a}.hero-tile:nth-child(2n){border-right:0}}
+@media(max-width:560px){.hero-media.hero-collage{height:500px}}
