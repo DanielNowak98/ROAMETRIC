@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import Link from '../../link';
 import { useState } from 'react';
 import { categories, categorySlug, products, type Product } from '../../data';
 import { InquiryButton, useInquiry } from '../../inquiry';

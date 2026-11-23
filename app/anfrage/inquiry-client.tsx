@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';
+import Link from '../link';
 import { useMemo, useState, type FormEvent } from 'react';
 import { categories, products } from '../data';
 import { clearInquiry, removeFromInquiry, setInquiryQuantity, useInquiry } from '../inquiry';

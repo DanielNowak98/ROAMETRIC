@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';
+import Link from './link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { categories, type Product } from './data';

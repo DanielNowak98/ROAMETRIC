@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from './link';
 import { categories } from './data';
 import { Footer, Header } from './ui';
 
