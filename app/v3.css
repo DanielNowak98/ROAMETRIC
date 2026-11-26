@@ -72,6 +72,17 @@
 @keyframes fade{to{opacity:1}}
 @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(2.4);opacity:.25}}
 
+/* Engineering (geteilte Ansicht) */
+.engineering-v3 .engineering-visual{position:relative;overflow:hidden}
+.engineering-v3 .engineering-visual:after{content:"";position:absolute;inset:0;background:inherit;background-size:cover;transition:transform 1.2s var(--ease);z-index:0}
+.engineering-v3 .engineering-visual:hover:after{transform:scale(1.05)}
+.eng-tag{position:absolute;z-index:1;background:#111513;color:white;padding:11px 15px;font:700 9px var(--font-mono);letter-spacing:.14em;line-height:1.5}
+.eng-tag.one{left:22px;top:22px}.eng-tag.two{right:22px;bottom:22px;background:var(--sand);color:var(--ink)}
+.steps-v3.light{border-top-color:var(--line)}
+.steps-v3.light li{border-bottom-color:var(--line)}
+.steps-v3.light b{color:#8b6a43}
+.steps-v3.light p{color:var(--muted)}
+
 /* ---------- Materialien ---------- */
 .materials-v3{background:var(--paper)}
 .material-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
