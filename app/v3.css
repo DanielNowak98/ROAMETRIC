@@ -160,3 +160,7 @@
   .pc3-view{display:none}
   .gallery-stage .product-visual.large,.blueprint{height:360px}
 }
+
+/* Collage: Graustufen der BJJ-Kachel ohne CSS-Filter, damit die Beschriftung nicht mit abgedunkelt wird */
+.hero-tile-bjj,.hero-tile-bjj:hover{filter:none;background-color:#7d7d7d;background-blend-mode:luminosity}
+.hero-tile-label{opacity:1;text-shadow:0 1px 10px #000c,0 0 2px #000}
