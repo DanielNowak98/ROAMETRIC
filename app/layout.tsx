@@ -4,6 +4,7 @@ import './globals.css';
 import './logo.css';
 import './shop-system.css';
 import './new-style.css';
+import './v3.css';
 export function generateMetadata(): Metadata {
   const title = 'ROAMETRIC — Precision for the Journey';
   const description = 'Durchdachte, präzise gefertigte Produkte für BJJ, Fahrrad, Van und Boot.';
