@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" width="800" height="800">
+<defs>
+<radialGradient id="bg" cx="50%" cy="38%" r="75%"><stop offset="0" stop-color="#f4efe6"/><stop offset=".65" stop-color="#e6dfd3"/><stop offset="1" stop-color="#d6cdbf"/></radialGradient>
+<linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2f2c"/><stop offset="1" stop-color="#1c1f1d"/></linearGradient>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="22"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .07 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+</defs>
+<rect width="800" height="800" fill="url(#bg)"/>
+<ellipse cx="420" cy="628" rx="290" ry="40" fill="#3a332a" opacity=".3" filter="url(#shadow)"/>
+<g transform="translate(400 410) scale(1.18) translate(-400 -410)">
+<defs><path id="mundschutz-case-p0" d="M340 300H470A100 100 0 0 1 570 400V410A100 100 0 0 1 470 510H340A100 100 0 0 1 240 410V400A100 100 0 0 1 340 300ZM307.0 360H339.0A7.0 7.0 0 0 1 346 367.0V367.0A7.0 7.0 0 0 1 339.0 374H307.0A7.0 7.0 0 0 1 300 367.0V367.0A7.0 7.0 0 0 1 307.0 360ZM307.0 394H339.0A7.0 7.0 0 0 1 346 401.0V401.0A7.0 7.0 0 0 1 339.0 408H307.0A7.0 7.0 0 0 1 300 401.0V401.0A7.0 7.0 0 0 1 307.0 394ZM307.0 428H339.0A7.0 7.0 0 0 1 346 435.0V435.0A7.0 7.0 0 0 1 339.0 442H307.0A7.0 7.0 0 0 1 300 435.0V435.0A7.0 7.0 0 0 1 307.0 428ZM363.0 360H395.0A7.0 7.0 0 0 1 402 367.0V367.0A7.0 7.0 0 0 1 395.0 374H363.0A7.0 7.0 0 0 1 356 367.0V367.0A7.0 7.0 0 0 1 363.0 360ZM363.0 394H395.0A7.0 7.0 0 0 1 402 401.0V401.0A7.0 7.0 0 0 1 395.0 408H363.0A7.0 7.0 0 0 1 356 401.0V401.0A7.0 7.0 0 0 1 363.0 394ZM363.0 428H395.0A7.0 7.0 0 0 1 402 435.0V435.0A7.0 7.0 0 0 1 395.0 442H363.0A7.0 7.0 0 0 1 356 435.0V435.0A7.0 7.0 0 0 1 363.0 428ZM419.0 360H451.0A7.0 7.0 0 0 1 458 367.0V367.0A7.0 7.0 0 0 1 451.0 374H419.0A7.0 7.0 0 0 1 412 367.0V367.0A7.0 7.0 0 0 1 419.0 360ZM419.0 394H451.0A7.0 7.0 0 0 1 458 401.0V401.0A7.0 7.0 0 0 1 451.0 408H419.0A7.0 7.0 0 0 1 412 401.0V401.0A7.0 7.0 0 0 1 419.0 394ZM419.0 428H451.0A7.0 7.0 0 0 1 458 435.0V435.0A7.0 7.0 0 0 1 451.0 442H419.0A7.0 7.0 0 0 1 412 435.0V435.0A7.0 7.0 0 0 1 419.0 428ZM475.0 360H507.0A7.0 7.0 0 0 1 514 367.0V367.0A7.0 7.0 0 0 1 507.0 374H475.0A7.0 7.0 0 0 1 468 367.0V367.0A7.0 7.0 0 0 1 475.0 360ZM475.0 394H507.0A7.0 7.0 0 0 1 514 401.0V401.0A7.0 7.0 0 0 1 507.0 408H475.0A7.0 7.0 0 0 1 468 401.0V401.0A7.0 7.0 0 0 1 475.0 394ZM475.0 428H507.0A7.0 7.0 0 0 1 514 435.0V435.0A7.0 7.0 0 0 1 507.0 442H475.0A7.0 7.0 0 0 1 468 435.0V435.0A7.0 7.0 0 0 1 475.0 428Z" fill-rule="evenodd"/></defs>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(63.0 -52.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(62.1 -51.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(61.2 -51.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(60.3 -50.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(59.4 -49.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(58.5 -48.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(57.6 -48.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(56.7 -47.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(55.8 -46.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(54.9 -45.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(54.0 -45.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(53.1 -44.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(52.2 -43.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(51.3 -42.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(50.4 -42.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(49.5 -41.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(48.6 -40.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(47.7 -39.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(46.8 -39.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(45.9 -38.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(45.0 -37.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(44.1 -36.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(43.2 -36.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(42.3 -35.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(41.4 -34.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(40.5 -33.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(39.6 -33.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(38.7 -32.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(37.8 -31.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(36.9 -30.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(36.0 -30.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(35.1 -29.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(34.2 -28.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(33.3 -27.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(32.4 -27.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(31.5 -26.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(30.6 -25.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(29.7 -24.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(28.8 -24.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(27.9 -23.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(27.0 -22.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(26.1 -21.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(25.2 -21.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(24.3 -20.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(23.4 -19.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(22.5 -18.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(21.6 -18.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(20.7 -17.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(19.8 -16.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(18.9 -15.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(18.0 -15.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(17.1 -14.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(16.2 -13.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(15.3 -12.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(14.4 -12.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(13.5 -11.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(12.6 -10.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(11.7 -9.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(10.8 -9.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(9.9 -8.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(9.0 -7.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(8.1 -6.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(7.2 -6.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(6.3 -5.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(5.4 -4.5)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(4.5 -3.8)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(3.6 -3.0)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(2.7 -2.2)"/>
+<use href="#mundschutz-case-p0" fill="#121413" transform="translate(1.8 -1.5)"/>
+<use href="#mundschutz-case-p0" fill="#161917" transform="translate(0.9 -0.8)"/>
+<use href="#mundschutz-case-p0" fill="url(#face)"/>
+<use href="#mundschutz-case-p0" fill="#000" filter="url(#grain)"/>
+<use href="#mundschutz-case-p0" fill="none" stroke="#4a504b" stroke-width="1.6" opacity=".75"/>
+<defs><path id="mundschutz-case-p1" d="M262 340H548" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></defs>
+<use href="#mundschutz-case-p1" stroke="#121413" opacity=".9"/>
+</g></svg>

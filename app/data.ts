@@ -32,7 +32,7 @@ export const legalLinks = [
 export type Category = { slug: string; name: string; kicker: string; icon: string; intro: string };
 
 export const categories: Category[] = [
-  { slug: 'bjj', name: 'BJJ', kicker: 'Ordnung auf und neben der Matte.', icon: 'J', intro: 'Durchdachte Helfer für Training, Gym und Gear rund um Brazilian Jiu Jitsu.' },
+  { slug: 'bjj', name: 'BJJ & Budo', kicker: 'Ordnung auf und neben der Matte.', icon: 'J', intro: 'Durchdachte Helfer für Training, Dojo und Gear — für BJJ, Jiu-Jitsu, Judo, Karate und alle Budo-Künste.' },
   { slug: 'fahrrad', name: 'Fahrrad', kicker: 'Cleverer. Leichter. Weiter.', icon: 'F', intro: 'Passgenaue Halter und Boxen, die klapperfrei am Rad sitzen.' },
   { slug: 'van', name: 'Van', kicker: 'Ordnung. Ausbau. Freiheit.', icon: 'V', intro: 'Modulare Lösungen für Ausbau und Organisation im Camper.' },
   { slug: 'boot', name: 'Boot', kicker: 'Gemacht für Wind & Wasser.', icon: 'B', intro: 'Robuste Teile für Sonnensegel, Persenning und Ausrüstung an Bord.' },
@@ -48,35 +48,71 @@ export function categorySlug(name: string) {
 
 export const products: Product[] = [
   // BEISPIELPRODUKTE: Namen, Preise, Material und Texte sind Platzhalter – bitte durch echte Produkte ersetzen.
-  // Für ein Produktfoto `image: '/assets/products/<datei>.webp'` ergänzen; ohne Bild erscheint ein Platzhalter.
+  // Bilder: Renderings aus scripts/generate-product-images.py. Für echte Fotos `image` auf z. B. '/assets/products/<datei>.webp' ändern.
   {
     slug: 'gi-guertel-wandhalter',
     name: 'Gi & Gürtel Wandhalter',
-    category: 'BJJ',
+    category: 'BJJ & Budo',
     price: 24.9,
     material: 'PA12',
     desc: 'Wandhalter für Gi und Gürtel, damit dein Gear nach dem Training ordentlich hängt und schnell trocknet.',
     color: '#252725',
+    image: '/assets/products/gi-guertel-wandhalter.svg',
     badge: 'Beispiel',
   },
   {
     slug: 'mundschutz-case',
     name: 'Mundschutz Case',
-    category: 'BJJ',
+    category: 'BJJ & Budo',
     price: 14.9,
     material: 'PA12',
     desc: 'Belüftetes, kompaktes Case für den Mundschutz – passt in jede Gym Bag.',
     color: '#252725',
+    image: '/assets/products/mundschutz-case.svg',
     badge: 'Beispiel',
   },
   {
     slug: 'tape-spender-gymbag',
     name: 'Tape-Spender für die Gym Bag',
-    category: 'BJJ',
+    category: 'BJJ & Budo',
     price: 17.9,
     material: 'PETG-CF',
     desc: 'Robuster Spender für Finger- und Sporttape mit integrierter Abreißkante, griffbereit am Bag.',
     color: '#252725',
+    image: '/assets/products/tape-spender-gymbag.svg',
+    badge: 'Beispiel',
+  },
+  {
+    slug: 'obi-display',
+    name: 'Obi-Display für Gürtelgrade',
+    category: 'BJJ & Budo',
+    price: 34.9,
+    material: 'PA12',
+    desc: 'Wandleiste mit sechs Aufnahmen, die deinen Weg vom ersten bis zum aktuellen Gürtel zeigt.',
+    color: '#252725',
+    image: '/assets/products/obi-display.svg',
+    badge: 'Beispiel',
+  },
+  {
+    slug: 'bokken-wandhalter',
+    name: 'Bokken & Jo Wandhalter',
+    category: 'BJJ & Budo',
+    price: 29.9,
+    material: 'PETG-CF',
+    desc: 'Halterpaar für Bokken, Jo und Hanbo — sichere, gepolsterte Auflage an der Wand von Dojo oder Zuhause.',
+    color: '#252725',
+    image: '/assets/products/bokken-wandhalter.svg',
+    badge: 'Beispiel',
+  },
+  {
+    slug: 'schuetzer-trockenstaender',
+    name: 'Schützer-Trockenständer',
+    category: 'BJJ & Budo',
+    price: 22.9,
+    material: 'PA12',
+    desc: 'Belüfteter Ständer, auf dem Hand-, Fuß- und Schienbeinschützer nach dem Training schnell trocknen.',
+    color: '#252725',
+    image: '/assets/products/schuetzer-trockenstaender.svg',
     badge: 'Beispiel',
   },
   {
@@ -87,6 +123,7 @@ export const products: Product[] = [
     material: 'PA12',
     desc: 'Vibrationsarme Smartphone-Aufnahme für gängige Lenkerdurchmesser, werkzeuglos montiert.',
     color: '#252725',
+    image: '/assets/products/lenker-smartphone-halter.svg',
     badge: 'Beispiel',
   },
   {
@@ -97,6 +134,7 @@ export const products: Product[] = [
     material: 'PETG-CF',
     desc: 'Adapter für zusätzliche Flaschen- oder Werkzeughalter an Rahmen ohne Gewindebohrungen.',
     color: '#252725',
+    image: '/assets/products/flaschenhalter-adapter.svg',
     badge: 'Beispiel',
   },
   {
@@ -107,6 +145,7 @@ export const products: Product[] = [
     material: 'PA12',
     desc: 'Klapperfreie Box für Schlauch, Pumpe und Multitool direkt am Unterrohr.',
     color: '#252725',
+    image: '/assets/products/unterrohr-werkzeugbox.svg',
     badge: 'Beispiel',
   },
   {
@@ -117,6 +156,7 @@ export const products: Product[] = [
     material: 'PA12',
     desc: 'Modulare Halterung für MOLLE-Panels an Wand, Tür oder Heckklappe im Camper.',
     color: '#252725',
+    image: '/assets/products/molle-panel-halterung.svg',
     badge: 'Beispiel',
   },
   {
@@ -127,6 +167,7 @@ export const products: Product[] = [
     material: 'TPU',
     desc: 'Flexible Sicherung, die Schubladen und Klappen während der Fahrt zuverlässig geschlossen hält.',
     color: '#252725',
+    image: '/assets/products/schubladen-sicherung.svg',
     badge: 'Beispiel',
   },
   {
@@ -137,6 +178,7 @@ export const products: Product[] = [
     material: 'ASA',
     desc: 'Erweiterbares Regalmodul für Gewürze und Kleinteile in der Camperküche.',
     color: '#252725',
+    image: '/assets/products/gewuerzregal-modul.svg',
     badge: 'Beispiel',
   },
   {
@@ -147,6 +189,7 @@ export const products: Product[] = [
     material: 'ASA',
     desc: 'UV-beständige Aufnahme für Sonnensegel an Reling oder Bimini-Gestell.',
     color: '#252725',
+    image: '/assets/products/sonnensegel-halter.svg',
     badge: 'Beispiel',
   },
   {
@@ -157,6 +200,7 @@ export const products: Product[] = [
     material: 'ASA',
     desc: 'Schneller Klemmhalter, der Fender an der Reling verstaut und griffbereit hält.',
     color: '#252725',
+    image: '/assets/products/fender-halter-reling.svg',
     badge: 'Beispiel',
   },
   {
@@ -167,6 +211,7 @@ export const products: Product[] = [
     material: 'PA12',
     desc: 'Set aus formstabilen Clips zur sicheren Befestigung von Persenning und Abdeckungen.',
     color: '#252725',
+    image: '/assets/products/persenning-clip-set.svg',
     badge: 'Beispiel',
   },
 ];

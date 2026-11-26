@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" width="800" height="800">
+<defs>
+<radialGradient id="bg" cx="50%" cy="38%" r="75%"><stop offset="0" stop-color="#f4efe6"/><stop offset=".65" stop-color="#e6dfd3"/><stop offset="1" stop-color="#d6cdbf"/></radialGradient>
+<linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2f2c"/><stop offset="1" stop-color="#1c1f1d"/></linearGradient>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="22"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .07 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+</defs>
+<rect width="800" height="800" fill="url(#bg)"/>
+<ellipse cx="420" cy="628" rx="290" ry="40" fill="#3a332a" opacity=".3" filter="url(#shadow)"/>
+<g transform="translate(400 410) scale(1.18) translate(-400 -410)">
+<defs><path id="lenker-smartphone-halter-p0" d="M310 520a90 90 0 1 0 180 0a90 90 0 1 0 -180 0ZM348 520a52 52 0 1 0 104 0a52 52 0 1 0 -104 0Z" fill-rule="evenodd"/></defs>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(54.0 -45.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(53.1 -44.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(52.2 -43.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(51.3 -42.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(50.4 -42.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(49.5 -41.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(48.6 -40.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(47.7 -39.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(46.8 -39.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(45.9 -38.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(45.0 -37.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(44.1 -36.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(43.2 -36.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(42.3 -35.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(41.4 -34.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(40.5 -33.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(39.6 -33.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(38.7 -32.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(37.8 -31.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(36.9 -30.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(36.0 -30.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(35.1 -29.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(34.2 -28.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(33.3 -27.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(32.4 -27.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(31.5 -26.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(30.6 -25.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(29.7 -24.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(28.8 -24.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(27.9 -23.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(27.0 -22.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(26.1 -21.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(25.2 -21.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(24.3 -20.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(23.4 -19.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(22.5 -18.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(21.6 -18.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(20.7 -17.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(19.8 -16.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(18.9 -15.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(18.0 -15.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(17.1 -14.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(16.2 -13.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(15.3 -12.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(14.4 -12.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(13.5 -11.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(12.6 -10.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(11.7 -9.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(10.8 -9.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(9.9 -8.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(9.0 -7.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(8.1 -6.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(7.2 -6.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(6.3 -5.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(5.4 -4.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(4.5 -3.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(3.6 -3.0)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(2.7 -2.2)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#121413" transform="translate(1.8 -1.5)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#161917" transform="translate(0.9 -0.8)"/>
+<use href="#lenker-smartphone-halter-p0" fill="url(#face)"/>
+<use href="#lenker-smartphone-halter-p0" fill="#000" filter="url(#grain)"/>
+<use href="#lenker-smartphone-halter-p0" fill="none" stroke="#4a504b" stroke-width="1.6" opacity=".75"/>
+<defs><path id="lenker-smartphone-halter-p1" d="M392 380H408A12 12 0 0 1 420 392V438A12 12 0 0 1 408 450H392A12 12 0 0 1 380 438V392A12 12 0 0 1 392 380Z" fill-rule="evenodd"/></defs>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(45.0 -37.5)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(44.1 -36.8)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(43.2 -36.0)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(42.3 -35.2)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(41.4 -34.5)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(40.5 -33.8)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(39.6 -33.0)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(38.7 -32.2)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(37.8 -31.5)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(36.9 -30.8)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(36.0 -30.0)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(35.1 -29.2)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(34.2 -28.5)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(33.3 -27.8)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(32.4 -27.0)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(31.5 -26.2)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(30.6 -25.5)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(29.7 -24.8)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(28.8 -24.0)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(27.9 -23.2)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(27.0 -22.5)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(26.1 -21.8)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(25.2 -21.0)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(24.3 -20.2)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(23.4 -19.5)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(22.5 -18.8)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(21.6 -18.0)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(20.7 -17.2)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(19.8 -16.5)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(18.9 -15.8)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(18.0 -15.0)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(17.1 -14.2)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(16.2 -13.5)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(15.3 -12.8)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(14.4 -12.0)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(13.5 -11.2)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(12.6 -10.5)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(11.7 -9.8)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(10.8 -9.0)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(9.9 -8.2)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(9.0 -7.5)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(8.1 -6.8)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(7.2 -6.0)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(6.3 -5.2)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(5.4 -4.5)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(4.5 -3.8)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(3.6 -3.0)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(2.7 -2.2)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#121413" transform="translate(1.8 -1.5)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#161917" transform="translate(0.9 -0.8)"/>
+<use href="#lenker-smartphone-halter-p1" fill="url(#face)"/>
+<use href="#lenker-smartphone-halter-p1" fill="#000" filter="url(#grain)"/>
+<use href="#lenker-smartphone-halter-p1" fill="none" stroke="#4a504b" stroke-width="1.6" opacity=".75"/>
+<defs><path id="lenker-smartphone-halter-p2" d="M308 200H492A28 28 0 0 1 520 228V372A28 28 0 0 1 492 400H308A28 28 0 0 1 280 372V228A28 28 0 0 1 308 200ZM324 230H476A14 14 0 0 1 490 244V356A14 14 0 0 1 476 370H324A14 14 0 0 1 310 356V244A14 14 0 0 1 324 230Z" fill-rule="evenodd"/></defs>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(36.0 -30.0)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(35.1 -29.2)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(34.2 -28.5)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(33.3 -27.8)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(32.4 -27.0)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(31.5 -26.2)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(30.6 -25.5)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(29.7 -24.8)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(28.8 -24.0)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(27.9 -23.2)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(27.0 -22.5)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(26.1 -21.8)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(25.2 -21.0)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(24.3 -20.2)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(23.4 -19.5)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(22.5 -18.8)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(21.6 -18.0)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(20.7 -17.2)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(19.8 -16.5)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(18.9 -15.8)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(18.0 -15.0)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(17.1 -14.2)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(16.2 -13.5)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(15.3 -12.8)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(14.4 -12.0)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(13.5 -11.2)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(12.6 -10.5)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(11.7 -9.8)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(10.8 -9.0)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(9.9 -8.2)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(9.0 -7.5)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(8.1 -6.8)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(7.2 -6.0)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(6.3 -5.2)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(5.4 -4.5)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(4.5 -3.8)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(3.6 -3.0)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(2.7 -2.2)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#121413" transform="translate(1.8 -1.5)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#161917" transform="translate(0.9 -0.8)"/>
+<use href="#lenker-smartphone-halter-p2" fill="url(#face)"/>
+<use href="#lenker-smartphone-halter-p2" fill="#000" filter="url(#grain)"/>
+<use href="#lenker-smartphone-halter-p2" fill="none" stroke="#4a504b" stroke-width="1.6" opacity=".75"/>
+<defs><path id="lenker-smartphone-halter-p3" d="M278 186H304A12 12 0 0 1 316 198V224A12 12 0 0 1 304 236H278A12 12 0 0 1 266 224V198A12 12 0 0 1 278 186ZM496 186H522A12 12 0 0 1 534 198V224A12 12 0 0 1 522 236H496A12 12 0 0 1 484 224V198A12 12 0 0 1 496 186ZM278 364H304A12 12 0 0 1 316 376V402A12 12 0 0 1 304 414H278A12 12 0 0 1 266 402V376A12 12 0 0 1 278 364ZM496 364H522A12 12 0 0 1 534 376V402A12 12 0 0 1 522 414H496A12 12 0 0 1 484 402V376A12 12 0 0 1 496 364Z" fill-rule="evenodd"/></defs>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(41.4 -34.5)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(40.5 -33.8)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(39.6 -33.0)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(38.7 -32.2)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(37.8 -31.5)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(36.9 -30.8)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(36.0 -30.0)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(35.1 -29.2)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(34.2 -28.5)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(33.3 -27.8)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(32.4 -27.0)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(31.5 -26.2)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(30.6 -25.5)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(29.7 -24.8)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(28.8 -24.0)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(27.9 -23.2)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(27.0 -22.5)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(26.1 -21.8)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(25.2 -21.0)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(24.3 -20.2)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(23.4 -19.5)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(22.5 -18.8)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(21.6 -18.0)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(20.7 -17.2)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(19.8 -16.5)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(18.9 -15.8)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(18.0 -15.0)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(17.1 -14.2)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(16.2 -13.5)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(15.3 -12.8)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(14.4 -12.0)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(13.5 -11.2)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(12.6 -10.5)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(11.7 -9.8)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(10.8 -9.0)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(9.9 -8.2)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(9.0 -7.5)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(8.1 -6.8)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(7.2 -6.0)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(6.3 -5.2)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(5.4 -4.5)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(4.5 -3.8)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(3.6 -3.0)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(2.7 -2.2)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#121413" transform="translate(1.8 -1.5)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#161917" transform="translate(0.9 -0.8)"/>
+<use href="#lenker-smartphone-halter-p3" fill="url(#face)"/>
+<use href="#lenker-smartphone-halter-p3" fill="#000" filter="url(#grain)"/>
+<use href="#lenker-smartphone-halter-p3" fill="none" stroke="#4a504b" stroke-width="1.6" opacity=".75"/>
+</g></svg>
