@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { categories, legalLinks, type Product } from './data';
 import { InquiryButton, InquiryToast, useInquiry } from './inquiry';
+import { detailFor } from './product-details';
 
 export function formatPrice(value: number) { return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' }); }
 
@@ -23,4 +24,4 @@ export function Footer(){
   </footer>
 }
 export function ProductVisual({p,large=false}:{p:Product;large?:boolean}){return <div className={`product-visual ${large?'large':''}`}>{p.image?<div className="product-photo" style={{backgroundImage:`url('${p.image}')`,backgroundPosition:p.imagePosition||'center',backgroundSize:p.imageSize||'cover'}}/>:<div className="product-photo product-photo-placeholder" aria-label="Produktbild folgt"><span>{p.category}</span><small>Bild folgt</small></div>}<em>{p.material}</em></div>}
-export function ProductCard({product:p,index}:{product:Product;index?:number}){return <article className="product-card pc3"><Link href={`/produkt/${p.slug}`} className="pc3-media"><ProductVisual p={p}/><span className="pc3-corner" aria-hidden="true"/>{typeof index==='number'&&<span className="pc3-index">{String(index+1).padStart(2,'0')}</span>}<span className="pc3-view">Details ansehen →</span></Link><div className="product-info"><p>{p.category.toUpperCase()} <i>·</i> {p.material}</p><Link href={`/produkt/${p.slug}`}><h3>{p.name}</h3></Link><strong>{formatPrice(p.price)}</strong><div className="card-actions"><Link className="card-more" href={`/produkt/${p.slug}`}>Details →</Link><InquiryButton slug={p.slug} className="card-inquiry" label="+ Anfrage"/></div></div>{p.badge&&<span className="badge">{p.badge}</span>}</article>}
+export function ProductCard({product:p,index}:{product:Product;index?:number}){return <article className="product-card pc3"><Link href={`/produkt/${p.slug}`} className="pc3-media"><ProductVisual p={p}/><span className="pc3-corner" aria-hidden="true"/>{typeof index==='number'&&<span className="pc3-index">{String(index+1).padStart(2,'0')}</span>}<span className="pc3-view">Details ansehen →</span></Link><div className="product-info"><p>{p.category.toUpperCase()} <i>·</i> {p.material}</p><Link href={`/produkt/${p.slug}`}><h3>{p.name}</h3></Link><strong>{formatPrice(p.price)}</strong>{detailFor(p.slug)&&<p className="pc3-tag">{detailFor(p.slug)?.tagline}</p>}<div className="card-actions"><Link className="card-more" href={`/produkt/${p.slug}`}>Details →</Link><InquiryButton slug={p.slug} className="card-inquiry" label="+ Anfrage"/></div></div>{p.badge&&<span className="badge">{p.badge}</span>}</article>}

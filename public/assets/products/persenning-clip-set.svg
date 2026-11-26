@@ -1,163 +1,189 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" width="800" height="800">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
 <defs>
-<radialGradient id="bg" cx="50%" cy="38%" r="75%"><stop offset="0" stop-color="#f4efe6"/><stop offset=".65" stop-color="#e6dfd3"/><stop offset="1" stop-color="#d6cdbf"/></radialGradient>
-<linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2f2c"/><stop offset="1" stop-color="#1c1f1d"/></linearGradient>
-<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="22"/></filter>
-<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .07 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3eee5"/><stop offset=".62" stop-color="#e7e0d4"/><stop offset=".63" stop-color="#e2dacd"/><stop offset="1" stop-color="#d3c9ba"/></linearGradient>
+<radialGradient id="glow" cx="45%" cy="30%" r="60%"><stop offset="0" stop-color="#fffaf2" stop-opacity=".9"/><stop offset="1" stop-color="#fffaf2" stop-opacity="0"/></radialGradient>
+<filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+<filter id="tight" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="7"/></filter>
+<filter id="powder"><feTurbulence type="fractalNoise" baseFrequency="1.9" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .09 0"/></filter>
+<filter id="fiber"><feTurbulence type="fractalNoise" baseFrequency="0.02 1.4" numOctaves="2" seed="9"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .12 0"/></filter>
+<linearGradient id="face" x1="0" y1="0" x2=".35" y2="1"><stop offset="0" stop-color="#383c39"/><stop offset="1" stop-color="#1f2220"/></linearGradient>
+<radialGradient id="spec" cx="30%" cy="22%" r="55%"><stop offset="0" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
 </defs>
 <rect width="800" height="800" fill="url(#bg)"/>
-<ellipse cx="420" cy="628" rx="290" ry="40" fill="#3a332a" opacity=".3" filter="url(#shadow)"/>
-<g transform="translate(400 410) scale(1.18) translate(-400 -410)">
-<defs><path id="persenning-clip-set-p0" d="M210 360 A70 70 0 1 1 300 420" fill="none" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/></defs>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(32.4 -27.0)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(31.5 -26.2)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(30.6 -25.5)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(29.7 -24.8)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(28.8 -24.0)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(27.9 -23.2)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(27.0 -22.5)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(26.1 -21.8)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(25.2 -21.0)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(24.3 -20.2)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(23.4 -19.5)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(22.5 -18.8)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(21.6 -18.0)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(20.7 -17.2)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(19.8 -16.5)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(18.9 -15.8)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(18.0 -15.0)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(17.1 -14.2)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(16.2 -13.5)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(15.3 -12.8)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(14.4 -12.0)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(13.5 -11.2)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(12.6 -10.5)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(11.7 -9.8)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(10.8 -9.0)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(9.9 -8.2)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(9.0 -7.5)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(8.1 -6.8)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(7.2 -6.0)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(6.3 -5.2)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(5.4 -4.5)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(4.5 -3.8)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(3.6 -3.0)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(2.7 -2.2)"/>
-<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(1.8 -1.5)"/>
-<use href="#persenning-clip-set-p0" stroke="#161917" transform="translate(0.9 -0.8)"/>
+<rect width="800" height="800" fill="url(#glow)"/>
+<ellipse cx="430" cy="636" rx="300" ry="46" fill="#3b3329" opacity=".26" filter="url(#soft)"/>
+<ellipse cx="420" cy="626" rx="220" ry="16" fill="#2a241d" opacity=".32" filter="url(#tight)"/>
+<g transform="translate(400 410) scale(1.16) translate(-400 -410)">
+<defs><path id="persenning-clip-set-p0" d="M200 360 A74 74 0 1 1 296 426" fill="none" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/><mask id="persenning-clip-set-p0-m"><use href="#persenning-clip-set-p0" stroke="#fff"/></mask></defs>
+<use href="#persenning-clip-set-p0" stroke="#0e100f" transform="translate(24.80 -31.20)"/>
+<use href="#persenning-clip-set-p0" stroke="#0e100f" transform="translate(24.18 -30.42)"/>
+<use href="#persenning-clip-set-p0" stroke="#0f1110" transform="translate(23.56 -29.64)"/>
+<use href="#persenning-clip-set-p0" stroke="#0f1110" transform="translate(22.94 -28.86)"/>
+<use href="#persenning-clip-set-p0" stroke="#101211" transform="translate(22.32 -28.08)"/>
+<use href="#persenning-clip-set-p0" stroke="#101211" transform="translate(21.70 -27.30)"/>
+<use href="#persenning-clip-set-p0" stroke="#111312" transform="translate(21.08 -26.52)"/>
+<use href="#persenning-clip-set-p0" stroke="#111412" transform="translate(20.46 -25.74)"/>
+<use href="#persenning-clip-set-p0" stroke="#121413" transform="translate(19.84 -24.96)"/>
+<use href="#persenning-clip-set-p0" stroke="#131514" transform="translate(19.22 -24.18)"/>
+<use href="#persenning-clip-set-p0" stroke="#131514" transform="translate(18.60 -23.40)"/>
+<use href="#persenning-clip-set-p0" stroke="#141615" transform="translate(17.98 -22.62)"/>
+<use href="#persenning-clip-set-p0" stroke="#141715" transform="translate(17.36 -21.84)"/>
+<use href="#persenning-clip-set-p0" stroke="#151716" transform="translate(16.74 -21.06)"/>
+<use href="#persenning-clip-set-p0" stroke="#161817" transform="translate(16.12 -20.28)"/>
+<use href="#persenning-clip-set-p0" stroke="#161917" transform="translate(15.50 -19.50)"/>
+<use href="#persenning-clip-set-p0" stroke="#171918" transform="translate(14.88 -18.72)"/>
+<use href="#persenning-clip-set-p0" stroke="#181a19" transform="translate(14.26 -17.94)"/>
+<use href="#persenning-clip-set-p0" stroke="#181b19" transform="translate(13.64 -17.16)"/>
+<use href="#persenning-clip-set-p0" stroke="#191b1a" transform="translate(13.02 -16.38)"/>
+<use href="#persenning-clip-set-p0" stroke="#191c1a" transform="translate(12.40 -15.60)"/>
+<use href="#persenning-clip-set-p0" stroke="#1a1d1b" transform="translate(11.78 -14.82)"/>
+<use href="#persenning-clip-set-p0" stroke="#1b1d1c" transform="translate(11.16 -14.04)"/>
+<use href="#persenning-clip-set-p0" stroke="#1b1e1c" transform="translate(10.54 -13.26)"/>
+<use href="#persenning-clip-set-p0" stroke="#1c1f1d" transform="translate(9.92 -12.48)"/>
+<use href="#persenning-clip-set-p0" stroke="#1d1f1e" transform="translate(9.30 -11.70)"/>
+<use href="#persenning-clip-set-p0" stroke="#1d201e" transform="translate(8.68 -10.92)"/>
+<use href="#persenning-clip-set-p0" stroke="#1e211f" transform="translate(8.06 -10.14)"/>
+<use href="#persenning-clip-set-p0" stroke="#1f2120" transform="translate(7.44 -9.36)"/>
+<use href="#persenning-clip-set-p0" stroke="#202221" transform="translate(6.82 -8.58)"/>
+<use href="#persenning-clip-set-p0" stroke="#202321" transform="translate(6.20 -7.80)"/>
+<use href="#persenning-clip-set-p0" stroke="#212422" transform="translate(5.58 -7.02)"/>
+<use href="#persenning-clip-set-p0" stroke="#222423" transform="translate(4.96 -6.24)"/>
+<use href="#persenning-clip-set-p0" stroke="#232524" transform="translate(4.34 -5.46)"/>
+<use href="#persenning-clip-set-p0" stroke="#232624" transform="translate(3.72 -4.68)"/>
+<use href="#persenning-clip-set-p0" stroke="#242725" transform="translate(3.10 -3.90)"/>
+<use href="#persenning-clip-set-p0" stroke="#252826" transform="translate(2.48 -3.12)"/>
+<use href="#persenning-clip-set-p0" stroke="#262927" transform="translate(1.86 -2.34)"/>
+<use href="#persenning-clip-set-p0" stroke="#272a28" transform="translate(1.24 -1.56)"/>
+<use href="#persenning-clip-set-p0" stroke="#282b29" transform="translate(0.62 -0.78)"/>
 <use href="#persenning-clip-set-p0" stroke="url(#face)"/>
-<use href="#persenning-clip-set-p0" stroke="#000" filter="url(#grain)"/>
-<defs><path id="persenning-clip-set-p1" d="M390 330 A90 90 0 1 1 505 410" fill="none" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/></defs>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(36.0 -30.0)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(35.1 -29.2)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(34.2 -28.5)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(33.3 -27.8)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(32.4 -27.0)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(31.5 -26.2)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(30.6 -25.5)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(29.7 -24.8)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(28.8 -24.0)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(27.9 -23.2)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(27.0 -22.5)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(26.1 -21.8)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(25.2 -21.0)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(24.3 -20.2)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(23.4 -19.5)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(22.5 -18.8)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(21.6 -18.0)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(20.7 -17.2)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(19.8 -16.5)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(18.9 -15.8)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(18.0 -15.0)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(17.1 -14.2)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(16.2 -13.5)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(15.3 -12.8)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(14.4 -12.0)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(13.5 -11.2)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(12.6 -10.5)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(11.7 -9.8)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(10.8 -9.0)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(9.9 -8.2)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(9.0 -7.5)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(8.1 -6.8)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(7.2 -6.0)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(6.3 -5.2)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(5.4 -4.5)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(4.5 -3.8)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(3.6 -3.0)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(2.7 -2.2)"/>
-<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(1.8 -1.5)"/>
-<use href="#persenning-clip-set-p1" stroke="#161917" transform="translate(0.9 -0.8)"/>
+<rect width="800" height="800" filter="url(#powder)" mask="url(#persenning-clip-set-p0-m)"/>
+<rect width="800" height="800" fill="url(#spec)" mask="url(#persenning-clip-set-p0-m)"/>
+<g mask="url(#persenning-clip-set-p0-m)"><use href="#persenning-clip-set-p0" stroke="#7d847f" opacity=".22" transform="translate(-10.2 -10.2)"/><use href="#persenning-clip-set-p0" stroke="#000" opacity=".25" transform="translate(11.5 11.5)"/></g>
+<defs><path id="persenning-clip-set-p1" d="M388 322 A96 96 0 1 1 510 408" fill="none" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/><mask id="persenning-clip-set-p1-m"><use href="#persenning-clip-set-p1" stroke="#fff"/></mask></defs>
+<use href="#persenning-clip-set-p1" stroke="#0e100f" transform="translate(27.28 -34.32)"/>
+<use href="#persenning-clip-set-p1" stroke="#0e100f" transform="translate(26.66 -33.54)"/>
+<use href="#persenning-clip-set-p1" stroke="#0f1110" transform="translate(26.04 -32.76)"/>
+<use href="#persenning-clip-set-p1" stroke="#0f1110" transform="translate(25.42 -31.98)"/>
+<use href="#persenning-clip-set-p1" stroke="#101211" transform="translate(24.80 -31.20)"/>
+<use href="#persenning-clip-set-p1" stroke="#101211" transform="translate(24.18 -30.42)"/>
+<use href="#persenning-clip-set-p1" stroke="#111312" transform="translate(23.56 -29.64)"/>
+<use href="#persenning-clip-set-p1" stroke="#111312" transform="translate(22.94 -28.86)"/>
+<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(22.32 -28.08)"/>
+<use href="#persenning-clip-set-p1" stroke="#121413" transform="translate(21.70 -27.30)"/>
+<use href="#persenning-clip-set-p1" stroke="#131514" transform="translate(21.08 -26.52)"/>
+<use href="#persenning-clip-set-p1" stroke="#131514" transform="translate(20.46 -25.74)"/>
+<use href="#persenning-clip-set-p1" stroke="#141615" transform="translate(19.84 -24.96)"/>
+<use href="#persenning-clip-set-p1" stroke="#141715" transform="translate(19.22 -24.18)"/>
+<use href="#persenning-clip-set-p1" stroke="#151716" transform="translate(18.60 -23.40)"/>
+<use href="#persenning-clip-set-p1" stroke="#151816" transform="translate(17.98 -22.62)"/>
+<use href="#persenning-clip-set-p1" stroke="#161817" transform="translate(17.36 -21.84)"/>
+<use href="#persenning-clip-set-p1" stroke="#171918" transform="translate(16.74 -21.06)"/>
+<use href="#persenning-clip-set-p1" stroke="#171918" transform="translate(16.12 -20.28)"/>
+<use href="#persenning-clip-set-p1" stroke="#181a19" transform="translate(15.50 -19.50)"/>
+<use href="#persenning-clip-set-p1" stroke="#181b19" transform="translate(14.88 -18.72)"/>
+<use href="#persenning-clip-set-p1" stroke="#191b1a" transform="translate(14.26 -17.94)"/>
+<use href="#persenning-clip-set-p1" stroke="#191c1a" transform="translate(13.64 -17.16)"/>
+<use href="#persenning-clip-set-p1" stroke="#1a1c1b" transform="translate(13.02 -16.38)"/>
+<use href="#persenning-clip-set-p1" stroke="#1b1d1c" transform="translate(12.40 -15.60)"/>
+<use href="#persenning-clip-set-p1" stroke="#1b1e1c" transform="translate(11.78 -14.82)"/>
+<use href="#persenning-clip-set-p1" stroke="#1c1e1d" transform="translate(11.16 -14.04)"/>
+<use href="#persenning-clip-set-p1" stroke="#1c1f1d" transform="translate(10.54 -13.26)"/>
+<use href="#persenning-clip-set-p1" stroke="#1d201e" transform="translate(9.92 -12.48)"/>
+<use href="#persenning-clip-set-p1" stroke="#1e201f" transform="translate(9.30 -11.70)"/>
+<use href="#persenning-clip-set-p1" stroke="#1e211f" transform="translate(8.68 -10.92)"/>
+<use href="#persenning-clip-set-p1" stroke="#1f2220" transform="translate(8.06 -10.14)"/>
+<use href="#persenning-clip-set-p1" stroke="#202221" transform="translate(7.44 -9.36)"/>
+<use href="#persenning-clip-set-p1" stroke="#202321" transform="translate(6.82 -8.58)"/>
+<use href="#persenning-clip-set-p1" stroke="#212422" transform="translate(6.20 -7.80)"/>
+<use href="#persenning-clip-set-p1" stroke="#222423" transform="translate(5.58 -7.02)"/>
+<use href="#persenning-clip-set-p1" stroke="#222523" transform="translate(4.96 -6.24)"/>
+<use href="#persenning-clip-set-p1" stroke="#232624" transform="translate(4.34 -5.46)"/>
+<use href="#persenning-clip-set-p1" stroke="#242725" transform="translate(3.72 -4.68)"/>
+<use href="#persenning-clip-set-p1" stroke="#252726" transform="translate(3.10 -3.90)"/>
+<use href="#persenning-clip-set-p1" stroke="#252826" transform="translate(2.48 -3.12)"/>
+<use href="#persenning-clip-set-p1" stroke="#262927" transform="translate(1.86 -2.34)"/>
+<use href="#persenning-clip-set-p1" stroke="#272a28" transform="translate(1.24 -1.56)"/>
+<use href="#persenning-clip-set-p1" stroke="#282b29" transform="translate(0.62 -0.78)"/>
 <use href="#persenning-clip-set-p1" stroke="url(#face)"/>
-<use href="#persenning-clip-set-p1" stroke="#000" filter="url(#grain)"/>
-<defs><path id="persenning-clip-set-p2" d="M300 560 A58 58 0 1 1 375 610" fill="none" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/></defs>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(28.8 -24.0)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(27.9 -23.2)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(27.0 -22.5)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(26.1 -21.8)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(25.2 -21.0)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(24.3 -20.2)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(23.4 -19.5)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(22.5 -18.8)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(21.6 -18.0)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(20.7 -17.2)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(19.8 -16.5)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(18.9 -15.8)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(18.0 -15.0)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(17.1 -14.2)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(16.2 -13.5)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(15.3 -12.8)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(14.4 -12.0)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(13.5 -11.2)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(12.6 -10.5)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(11.7 -9.8)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(10.8 -9.0)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(9.9 -8.2)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(9.0 -7.5)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(8.1 -6.8)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(7.2 -6.0)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(6.3 -5.2)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(5.4 -4.5)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(4.5 -3.8)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(3.6 -3.0)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(2.7 -2.2)"/>
-<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(1.8 -1.5)"/>
-<use href="#persenning-clip-set-p2" stroke="#161917" transform="translate(0.9 -0.8)"/>
+<rect width="800" height="800" filter="url(#powder)" mask="url(#persenning-clip-set-p1-m)"/>
+<rect width="800" height="800" fill="url(#spec)" mask="url(#persenning-clip-set-p1-m)"/>
+<g mask="url(#persenning-clip-set-p1-m)"><use href="#persenning-clip-set-p1" stroke="#7d847f" opacity=".22" transform="translate(-11.5 -11.5)"/><use href="#persenning-clip-set-p1" stroke="#000" opacity=".25" transform="translate(13.0 13.0)"/></g>
+<defs><path id="persenning-clip-set-p2" d="M292 566 A60 60 0 1 1 370 618" fill="none" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/><mask id="persenning-clip-set-p2-m"><use href="#persenning-clip-set-p2" stroke="#fff"/></mask></defs>
+<use href="#persenning-clip-set-p2" stroke="#0e100f" transform="translate(21.08 -26.52)"/>
+<use href="#persenning-clip-set-p2" stroke="#0e100f" transform="translate(20.46 -25.74)"/>
+<use href="#persenning-clip-set-p2" stroke="#0f1110" transform="translate(19.84 -24.96)"/>
+<use href="#persenning-clip-set-p2" stroke="#0f1210" transform="translate(19.22 -24.18)"/>
+<use href="#persenning-clip-set-p2" stroke="#101211" transform="translate(18.60 -23.40)"/>
+<use href="#persenning-clip-set-p2" stroke="#111312" transform="translate(17.98 -22.62)"/>
+<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(17.36 -21.84)"/>
+<use href="#persenning-clip-set-p2" stroke="#121413" transform="translate(16.74 -21.06)"/>
+<use href="#persenning-clip-set-p2" stroke="#131514" transform="translate(16.12 -20.28)"/>
+<use href="#persenning-clip-set-p2" stroke="#141615" transform="translate(15.50 -19.50)"/>
+<use href="#persenning-clip-set-p2" stroke="#141715" transform="translate(14.88 -18.72)"/>
+<use href="#persenning-clip-set-p2" stroke="#151716" transform="translate(14.26 -17.94)"/>
+<use href="#persenning-clip-set-p2" stroke="#161817" transform="translate(13.64 -17.16)"/>
+<use href="#persenning-clip-set-p2" stroke="#161917" transform="translate(13.02 -16.38)"/>
+<use href="#persenning-clip-set-p2" stroke="#171a18" transform="translate(12.40 -15.60)"/>
+<use href="#persenning-clip-set-p2" stroke="#181a19" transform="translate(11.78 -14.82)"/>
+<use href="#persenning-clip-set-p2" stroke="#191b1a" transform="translate(11.16 -14.04)"/>
+<use href="#persenning-clip-set-p2" stroke="#191c1a" transform="translate(10.54 -13.26)"/>
+<use href="#persenning-clip-set-p2" stroke="#1a1d1b" transform="translate(9.92 -12.48)"/>
+<use href="#persenning-clip-set-p2" stroke="#1b1d1c" transform="translate(9.30 -11.70)"/>
+<use href="#persenning-clip-set-p2" stroke="#1c1e1d" transform="translate(8.68 -10.92)"/>
+<use href="#persenning-clip-set-p2" stroke="#1d1f1e" transform="translate(8.06 -10.14)"/>
+<use href="#persenning-clip-set-p2" stroke="#1d201e" transform="translate(7.44 -9.36)"/>
+<use href="#persenning-clip-set-p2" stroke="#1e211f" transform="translate(6.82 -8.58)"/>
+<use href="#persenning-clip-set-p2" stroke="#1f2220" transform="translate(6.20 -7.80)"/>
+<use href="#persenning-clip-set-p2" stroke="#202221" transform="translate(5.58 -7.02)"/>
+<use href="#persenning-clip-set-p2" stroke="#212322" transform="translate(4.96 -6.24)"/>
+<use href="#persenning-clip-set-p2" stroke="#222423" transform="translate(4.34 -5.46)"/>
+<use href="#persenning-clip-set-p2" stroke="#232524" transform="translate(3.72 -4.68)"/>
+<use href="#persenning-clip-set-p2" stroke="#232624" transform="translate(3.10 -3.90)"/>
+<use href="#persenning-clip-set-p2" stroke="#242725" transform="translate(2.48 -3.12)"/>
+<use href="#persenning-clip-set-p2" stroke="#252826" transform="translate(1.86 -2.34)"/>
+<use href="#persenning-clip-set-p2" stroke="#272928" transform="translate(1.24 -1.56)"/>
+<use href="#persenning-clip-set-p2" stroke="#282b29" transform="translate(0.62 -0.78)"/>
 <use href="#persenning-clip-set-p2" stroke="url(#face)"/>
-<use href="#persenning-clip-set-p2" stroke="#000" filter="url(#grain)"/>
-<defs><path id="persenning-clip-set-p3" d="M520 560 A58 58 0 1 1 595 610" fill="none" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/></defs>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(28.8 -24.0)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(27.9 -23.2)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(27.0 -22.5)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(26.1 -21.8)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(25.2 -21.0)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(24.3 -20.2)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(23.4 -19.5)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(22.5 -18.8)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(21.6 -18.0)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(20.7 -17.2)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(19.8 -16.5)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(18.9 -15.8)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(18.0 -15.0)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(17.1 -14.2)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(16.2 -13.5)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(15.3 -12.8)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(14.4 -12.0)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(13.5 -11.2)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(12.6 -10.5)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(11.7 -9.8)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(10.8 -9.0)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(9.9 -8.2)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(9.0 -7.5)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(8.1 -6.8)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(7.2 -6.0)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(6.3 -5.2)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(5.4 -4.5)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(4.5 -3.8)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(3.6 -3.0)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(2.7 -2.2)"/>
-<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(1.8 -1.5)"/>
-<use href="#persenning-clip-set-p3" stroke="#161917" transform="translate(0.9 -0.8)"/>
+<rect width="800" height="800" filter="url(#powder)" mask="url(#persenning-clip-set-p2-m)"/>
+<rect width="800" height="800" fill="url(#spec)" mask="url(#persenning-clip-set-p2-m)"/>
+<g mask="url(#persenning-clip-set-p2-m)"><use href="#persenning-clip-set-p2" stroke="#7d847f" opacity=".22" transform="translate(-9.0 -9.0)"/><use href="#persenning-clip-set-p2" stroke="#000" opacity=".25" transform="translate(10.1 10.1)"/></g>
+<defs><path id="persenning-clip-set-p3" d="M520 566 A60 60 0 1 1 598 618" fill="none" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/><mask id="persenning-clip-set-p3-m"><use href="#persenning-clip-set-p3" stroke="#fff"/></mask></defs>
+<use href="#persenning-clip-set-p3" stroke="#0e100f" transform="translate(21.08 -26.52)"/>
+<use href="#persenning-clip-set-p3" stroke="#0e100f" transform="translate(20.46 -25.74)"/>
+<use href="#persenning-clip-set-p3" stroke="#0f1110" transform="translate(19.84 -24.96)"/>
+<use href="#persenning-clip-set-p3" stroke="#0f1210" transform="translate(19.22 -24.18)"/>
+<use href="#persenning-clip-set-p3" stroke="#101211" transform="translate(18.60 -23.40)"/>
+<use href="#persenning-clip-set-p3" stroke="#111312" transform="translate(17.98 -22.62)"/>
+<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(17.36 -21.84)"/>
+<use href="#persenning-clip-set-p3" stroke="#121413" transform="translate(16.74 -21.06)"/>
+<use href="#persenning-clip-set-p3" stroke="#131514" transform="translate(16.12 -20.28)"/>
+<use href="#persenning-clip-set-p3" stroke="#141615" transform="translate(15.50 -19.50)"/>
+<use href="#persenning-clip-set-p3" stroke="#141715" transform="translate(14.88 -18.72)"/>
+<use href="#persenning-clip-set-p3" stroke="#151716" transform="translate(14.26 -17.94)"/>
+<use href="#persenning-clip-set-p3" stroke="#161817" transform="translate(13.64 -17.16)"/>
+<use href="#persenning-clip-set-p3" stroke="#161917" transform="translate(13.02 -16.38)"/>
+<use href="#persenning-clip-set-p3" stroke="#171a18" transform="translate(12.40 -15.60)"/>
+<use href="#persenning-clip-set-p3" stroke="#181a19" transform="translate(11.78 -14.82)"/>
+<use href="#persenning-clip-set-p3" stroke="#191b1a" transform="translate(11.16 -14.04)"/>
+<use href="#persenning-clip-set-p3" stroke="#191c1a" transform="translate(10.54 -13.26)"/>
+<use href="#persenning-clip-set-p3" stroke="#1a1d1b" transform="translate(9.92 -12.48)"/>
+<use href="#persenning-clip-set-p3" stroke="#1b1d1c" transform="translate(9.30 -11.70)"/>
+<use href="#persenning-clip-set-p3" stroke="#1c1e1d" transform="translate(8.68 -10.92)"/>
+<use href="#persenning-clip-set-p3" stroke="#1d1f1e" transform="translate(8.06 -10.14)"/>
+<use href="#persenning-clip-set-p3" stroke="#1d201e" transform="translate(7.44 -9.36)"/>
+<use href="#persenning-clip-set-p3" stroke="#1e211f" transform="translate(6.82 -8.58)"/>
+<use href="#persenning-clip-set-p3" stroke="#1f2220" transform="translate(6.20 -7.80)"/>
+<use href="#persenning-clip-set-p3" stroke="#202221" transform="translate(5.58 -7.02)"/>
+<use href="#persenning-clip-set-p3" stroke="#212322" transform="translate(4.96 -6.24)"/>
+<use href="#persenning-clip-set-p3" stroke="#222423" transform="translate(4.34 -5.46)"/>
+<use href="#persenning-clip-set-p3" stroke="#232524" transform="translate(3.72 -4.68)"/>
+<use href="#persenning-clip-set-p3" stroke="#232624" transform="translate(3.10 -3.90)"/>
+<use href="#persenning-clip-set-p3" stroke="#242725" transform="translate(2.48 -3.12)"/>
+<use href="#persenning-clip-set-p3" stroke="#252826" transform="translate(1.86 -2.34)"/>
+<use href="#persenning-clip-set-p3" stroke="#272928" transform="translate(1.24 -1.56)"/>
+<use href="#persenning-clip-set-p3" stroke="#282b29" transform="translate(0.62 -0.78)"/>
 <use href="#persenning-clip-set-p3" stroke="url(#face)"/>
-<use href="#persenning-clip-set-p3" stroke="#000" filter="url(#grain)"/>
+<rect width="800" height="800" filter="url(#powder)" mask="url(#persenning-clip-set-p3-m)"/>
+<rect width="800" height="800" fill="url(#spec)" mask="url(#persenning-clip-set-p3-m)"/>
+<g mask="url(#persenning-clip-set-p3-m)"><use href="#persenning-clip-set-p3" stroke="#7d847f" opacity=".22" transform="translate(-9.0 -9.0)"/><use href="#persenning-clip-set-p3" stroke="#000" opacity=".25" transform="translate(10.1 10.1)"/></g>
 </g></svg>

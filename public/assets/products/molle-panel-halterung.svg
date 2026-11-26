@@ -1,78 +1,133 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" width="800" height="800">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
 <defs>
-<radialGradient id="bg" cx="50%" cy="38%" r="75%"><stop offset="0" stop-color="#f4efe6"/><stop offset=".65" stop-color="#e6dfd3"/><stop offset="1" stop-color="#d6cdbf"/></radialGradient>
-<linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2f2c"/><stop offset="1" stop-color="#1c1f1d"/></linearGradient>
-<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="22"/></filter>
-<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .07 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3eee5"/><stop offset=".62" stop-color="#e7e0d4"/><stop offset=".63" stop-color="#e2dacd"/><stop offset="1" stop-color="#d3c9ba"/></linearGradient>
+<radialGradient id="glow" cx="45%" cy="30%" r="60%"><stop offset="0" stop-color="#fffaf2" stop-opacity=".9"/><stop offset="1" stop-color="#fffaf2" stop-opacity="0"/></radialGradient>
+<filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+<filter id="tight" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="7"/></filter>
+<filter id="powder"><feTurbulence type="fractalNoise" baseFrequency="1.9" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .09 0"/></filter>
+<filter id="fiber"><feTurbulence type="fractalNoise" baseFrequency="0.02 1.4" numOctaves="2" seed="9"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .12 0"/></filter>
+<linearGradient id="face" x1="0" y1="0" x2=".35" y2="1"><stop offset="0" stop-color="#383c39"/><stop offset="1" stop-color="#1f2220"/></linearGradient>
+<radialGradient id="spec" cx="30%" cy="22%" r="55%"><stop offset="0" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
 </defs>
 <rect width="800" height="800" fill="url(#bg)"/>
-<ellipse cx="420" cy="628" rx="290" ry="40" fill="#3a332a" opacity=".3" filter="url(#shadow)"/>
-<g transform="translate(400 410) scale(1.18) translate(-400 -410)">
-<defs><path id="molle-panel-halterung-p0" d="M232 200H568A22 22 0 0 1 590 222V578A22 22 0 0 1 568 600H232A22 22 0 0 1 210 578V222A22 22 0 0 1 232 200ZM261.0 245H319.0A11.0 11.0 0 0 1 330 256.0V256.0A11.0 11.0 0 0 1 319.0 267H261.0A11.0 11.0 0 0 1 250 256.0V256.0A11.0 11.0 0 0 1 261.0 245ZM261.0 293H319.0A11.0 11.0 0 0 1 330 304.0V304.0A11.0 11.0 0 0 1 319.0 315H261.0A11.0 11.0 0 0 1 250 304.0V304.0A11.0 11.0 0 0 1 261.0 293ZM261.0 341H319.0A11.0 11.0 0 0 1 330 352.0V352.0A11.0 11.0 0 0 1 319.0 363H261.0A11.0 11.0 0 0 1 250 352.0V352.0A11.0 11.0 0 0 1 261.0 341ZM261.0 389H319.0A11.0 11.0 0 0 1 330 400.0V400.0A11.0 11.0 0 0 1 319.0 411H261.0A11.0 11.0 0 0 1 250 400.0V400.0A11.0 11.0 0 0 1 261.0 389ZM261.0 437H319.0A11.0 11.0 0 0 1 330 448.0V448.0A11.0 11.0 0 0 1 319.0 459H261.0A11.0 11.0 0 0 1 250 448.0V448.0A11.0 11.0 0 0 1 261.0 437ZM261.0 485H319.0A11.0 11.0 0 0 1 330 496.0V496.0A11.0 11.0 0 0 1 319.0 507H261.0A11.0 11.0 0 0 1 250 496.0V496.0A11.0 11.0 0 0 1 261.0 485ZM261.0 533H319.0A11.0 11.0 0 0 1 330 544.0V544.0A11.0 11.0 0 0 1 319.0 555H261.0A11.0 11.0 0 0 1 250 544.0V544.0A11.0 11.0 0 0 1 261.0 533ZM365.0 245H423.0A11.0 11.0 0 0 1 434 256.0V256.0A11.0 11.0 0 0 1 423.0 267H365.0A11.0 11.0 0 0 1 354 256.0V256.0A11.0 11.0 0 0 1 365.0 245ZM365.0 293H423.0A11.0 11.0 0 0 1 434 304.0V304.0A11.0 11.0 0 0 1 423.0 315H365.0A11.0 11.0 0 0 1 354 304.0V304.0A11.0 11.0 0 0 1 365.0 293ZM365.0 341H423.0A11.0 11.0 0 0 1 434 352.0V352.0A11.0 11.0 0 0 1 423.0 363H365.0A11.0 11.0 0 0 1 354 352.0V352.0A11.0 11.0 0 0 1 365.0 341ZM365.0 389H423.0A11.0 11.0 0 0 1 434 400.0V400.0A11.0 11.0 0 0 1 423.0 411H365.0A11.0 11.0 0 0 1 354 400.0V400.0A11.0 11.0 0 0 1 365.0 389ZM365.0 437H423.0A11.0 11.0 0 0 1 434 448.0V448.0A11.0 11.0 0 0 1 423.0 459H365.0A11.0 11.0 0 0 1 354 448.0V448.0A11.0 11.0 0 0 1 365.0 437ZM365.0 485H423.0A11.0 11.0 0 0 1 434 496.0V496.0A11.0 11.0 0 0 1 423.0 507H365.0A11.0 11.0 0 0 1 354 496.0V496.0A11.0 11.0 0 0 1 365.0 485ZM365.0 533H423.0A11.0 11.0 0 0 1 434 544.0V544.0A11.0 11.0 0 0 1 423.0 555H365.0A11.0 11.0 0 0 1 354 544.0V544.0A11.0 11.0 0 0 1 365.0 533ZM469.0 245H527.0A11.0 11.0 0 0 1 538 256.0V256.0A11.0 11.0 0 0 1 527.0 267H469.0A11.0 11.0 0 0 1 458 256.0V256.0A11.0 11.0 0 0 1 469.0 245ZM469.0 293H527.0A11.0 11.0 0 0 1 538 304.0V304.0A11.0 11.0 0 0 1 527.0 315H469.0A11.0 11.0 0 0 1 458 304.0V304.0A11.0 11.0 0 0 1 469.0 293ZM469.0 341H527.0A11.0 11.0 0 0 1 538 352.0V352.0A11.0 11.0 0 0 1 527.0 363H469.0A11.0 11.0 0 0 1 458 352.0V352.0A11.0 11.0 0 0 1 469.0 341ZM469.0 389H527.0A11.0 11.0 0 0 1 538 400.0V400.0A11.0 11.0 0 0 1 527.0 411H469.0A11.0 11.0 0 0 1 458 400.0V400.0A11.0 11.0 0 0 1 469.0 389ZM469.0 437H527.0A11.0 11.0 0 0 1 538 448.0V448.0A11.0 11.0 0 0 1 527.0 459H469.0A11.0 11.0 0 0 1 458 448.0V448.0A11.0 11.0 0 0 1 469.0 437ZM469.0 485H527.0A11.0 11.0 0 0 1 538 496.0V496.0A11.0 11.0 0 0 1 527.0 507H469.0A11.0 11.0 0 0 1 458 496.0V496.0A11.0 11.0 0 0 1 469.0 485ZM469.0 533H527.0A11.0 11.0 0 0 1 538 544.0V544.0A11.0 11.0 0 0 1 527.0 555H469.0A11.0 11.0 0 0 1 458 544.0V544.0A11.0 11.0 0 0 1 469.0 533Z" fill-rule="evenodd"/></defs>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(23.4 -19.5)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(22.5 -18.8)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(21.6 -18.0)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(20.7 -17.2)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(19.8 -16.5)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(18.9 -15.8)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(18.0 -15.0)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(17.1 -14.2)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(16.2 -13.5)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(15.3 -12.8)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(14.4 -12.0)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(13.5 -11.2)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(12.6 -10.5)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(11.7 -9.8)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(10.8 -9.0)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(9.9 -8.2)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(9.0 -7.5)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(8.1 -6.8)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(7.2 -6.0)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(6.3 -5.2)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(5.4 -4.5)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(4.5 -3.8)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(3.6 -3.0)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(2.7 -2.2)"/>
-<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(1.8 -1.5)"/>
-<use href="#molle-panel-halterung-p0" fill="#161917" transform="translate(0.9 -0.8)"/>
+<rect width="800" height="800" fill="url(#glow)"/>
+<ellipse cx="430" cy="636" rx="300" ry="46" fill="#3b3329" opacity=".26" filter="url(#soft)"/>
+<ellipse cx="420" cy="626" rx="220" ry="16" fill="#2a241d" opacity=".32" filter="url(#tight)"/>
+<g transform="translate(400 410) scale(1.16) translate(-400 -410)">
+<defs><path id="molle-panel-halterung-p0" d="M226 190H574A26 26 0 0 1 600 216V584A26 26 0 0 1 574 610H226A26 26 0 0 1 200 584V216A26 26 0 0 1 226 190ZM253.0 240H315.0A11.0 11.0 0 0 1 326 251.0V251.0A11.0 11.0 0 0 1 315.0 262H253.0A11.0 11.0 0 0 1 242 251.0V251.0A11.0 11.0 0 0 1 253.0 240ZM253.0 288H315.0A11.0 11.0 0 0 1 326 299.0V299.0A11.0 11.0 0 0 1 315.0 310H253.0A11.0 11.0 0 0 1 242 299.0V299.0A11.0 11.0 0 0 1 253.0 288ZM253.0 336H315.0A11.0 11.0 0 0 1 326 347.0V347.0A11.0 11.0 0 0 1 315.0 358H253.0A11.0 11.0 0 0 1 242 347.0V347.0A11.0 11.0 0 0 1 253.0 336ZM253.0 384H315.0A11.0 11.0 0 0 1 326 395.0V395.0A11.0 11.0 0 0 1 315.0 406H253.0A11.0 11.0 0 0 1 242 395.0V395.0A11.0 11.0 0 0 1 253.0 384ZM253.0 432H315.0A11.0 11.0 0 0 1 326 443.0V443.0A11.0 11.0 0 0 1 315.0 454H253.0A11.0 11.0 0 0 1 242 443.0V443.0A11.0 11.0 0 0 1 253.0 432ZM253.0 480H315.0A11.0 11.0 0 0 1 326 491.0V491.0A11.0 11.0 0 0 1 315.0 502H253.0A11.0 11.0 0 0 1 242 491.0V491.0A11.0 11.0 0 0 1 253.0 480ZM253.0 528H315.0A11.0 11.0 0 0 1 326 539.0V539.0A11.0 11.0 0 0 1 315.0 550H253.0A11.0 11.0 0 0 1 242 539.0V539.0A11.0 11.0 0 0 1 253.0 528ZM361.0 240H423.0A11.0 11.0 0 0 1 434 251.0V251.0A11.0 11.0 0 0 1 423.0 262H361.0A11.0 11.0 0 0 1 350 251.0V251.0A11.0 11.0 0 0 1 361.0 240ZM361.0 288H423.0A11.0 11.0 0 0 1 434 299.0V299.0A11.0 11.0 0 0 1 423.0 310H361.0A11.0 11.0 0 0 1 350 299.0V299.0A11.0 11.0 0 0 1 361.0 288ZM361.0 336H423.0A11.0 11.0 0 0 1 434 347.0V347.0A11.0 11.0 0 0 1 423.0 358H361.0A11.0 11.0 0 0 1 350 347.0V347.0A11.0 11.0 0 0 1 361.0 336ZM361.0 384H423.0A11.0 11.0 0 0 1 434 395.0V395.0A11.0 11.0 0 0 1 423.0 406H361.0A11.0 11.0 0 0 1 350 395.0V395.0A11.0 11.0 0 0 1 361.0 384ZM361.0 432H423.0A11.0 11.0 0 0 1 434 443.0V443.0A11.0 11.0 0 0 1 423.0 454H361.0A11.0 11.0 0 0 1 350 443.0V443.0A11.0 11.0 0 0 1 361.0 432ZM361.0 480H423.0A11.0 11.0 0 0 1 434 491.0V491.0A11.0 11.0 0 0 1 423.0 502H361.0A11.0 11.0 0 0 1 350 491.0V491.0A11.0 11.0 0 0 1 361.0 480ZM361.0 528H423.0A11.0 11.0 0 0 1 434 539.0V539.0A11.0 11.0 0 0 1 423.0 550H361.0A11.0 11.0 0 0 1 350 539.0V539.0A11.0 11.0 0 0 1 361.0 528ZM469.0 240H531.0A11.0 11.0 0 0 1 542 251.0V251.0A11.0 11.0 0 0 1 531.0 262H469.0A11.0 11.0 0 0 1 458 251.0V251.0A11.0 11.0 0 0 1 469.0 240ZM469.0 288H531.0A11.0 11.0 0 0 1 542 299.0V299.0A11.0 11.0 0 0 1 531.0 310H469.0A11.0 11.0 0 0 1 458 299.0V299.0A11.0 11.0 0 0 1 469.0 288ZM469.0 336H531.0A11.0 11.0 0 0 1 542 347.0V347.0A11.0 11.0 0 0 1 531.0 358H469.0A11.0 11.0 0 0 1 458 347.0V347.0A11.0 11.0 0 0 1 469.0 336ZM469.0 384H531.0A11.0 11.0 0 0 1 542 395.0V395.0A11.0 11.0 0 0 1 531.0 406H469.0A11.0 11.0 0 0 1 458 395.0V395.0A11.0 11.0 0 0 1 469.0 384ZM469.0 432H531.0A11.0 11.0 0 0 1 542 443.0V443.0A11.0 11.0 0 0 1 531.0 454H469.0A11.0 11.0 0 0 1 458 443.0V443.0A11.0 11.0 0 0 1 469.0 432ZM469.0 480H531.0A11.0 11.0 0 0 1 542 491.0V491.0A11.0 11.0 0 0 1 531.0 502H469.0A11.0 11.0 0 0 1 458 491.0V491.0A11.0 11.0 0 0 1 469.0 480ZM469.0 528H531.0A11.0 11.0 0 0 1 542 539.0V539.0A11.0 11.0 0 0 1 531.0 550H469.0A11.0 11.0 0 0 1 458 539.0V539.0A11.0 11.0 0 0 1 469.0 528Z" fill-rule="evenodd"/><mask id="molle-panel-halterung-p0-m"><use href="#molle-panel-halterung-p0" fill="#fff"/></mask></defs>
+<use href="#molle-panel-halterung-p0" fill="#0e100f" transform="translate(17.36 -21.84)"/>
+<use href="#molle-panel-halterung-p0" fill="#0e100f" transform="translate(16.74 -21.06)"/>
+<use href="#molle-panel-halterung-p0" fill="#0f1110" transform="translate(16.12 -20.28)"/>
+<use href="#molle-panel-halterung-p0" fill="#101211" transform="translate(15.50 -19.50)"/>
+<use href="#molle-panel-halterung-p0" fill="#111312" transform="translate(14.88 -18.72)"/>
+<use href="#molle-panel-halterung-p0" fill="#121413" transform="translate(14.26 -17.94)"/>
+<use href="#molle-panel-halterung-p0" fill="#121513" transform="translate(13.64 -17.16)"/>
+<use href="#molle-panel-halterung-p0" fill="#131514" transform="translate(13.02 -16.38)"/>
+<use href="#molle-panel-halterung-p0" fill="#141615" transform="translate(12.40 -15.60)"/>
+<use href="#molle-panel-halterung-p0" fill="#151716" transform="translate(11.78 -14.82)"/>
+<use href="#molle-panel-halterung-p0" fill="#161817" transform="translate(11.16 -14.04)"/>
+<use href="#molle-panel-halterung-p0" fill="#171918" transform="translate(10.54 -13.26)"/>
+<use href="#molle-panel-halterung-p0" fill="#181a19" transform="translate(9.92 -12.48)"/>
+<use href="#molle-panel-halterung-p0" fill="#191b1a" transform="translate(9.30 -11.70)"/>
+<use href="#molle-panel-halterung-p0" fill="#191c1a" transform="translate(8.68 -10.92)"/>
+<use href="#molle-panel-halterung-p0" fill="#1a1d1b" transform="translate(8.06 -10.14)"/>
+<use href="#molle-panel-halterung-p0" fill="#1b1e1c" transform="translate(7.44 -9.36)"/>
+<use href="#molle-panel-halterung-p0" fill="#1c1f1d" transform="translate(6.82 -8.58)"/>
+<use href="#molle-panel-halterung-p0" fill="#1d201e" transform="translate(6.20 -7.80)"/>
+<use href="#molle-panel-halterung-p0" fill="#1e211f" transform="translate(5.58 -7.02)"/>
+<use href="#molle-panel-halterung-p0" fill="#1f2220" transform="translate(4.96 -6.24)"/>
+<use href="#molle-panel-halterung-p0" fill="#202321" transform="translate(4.34 -5.46)"/>
+<use href="#molle-panel-halterung-p0" fill="#212422" transform="translate(3.72 -4.68)"/>
+<use href="#molle-panel-halterung-p0" fill="#222523" transform="translate(3.10 -3.90)"/>
+<use href="#molle-panel-halterung-p0" fill="#242625" transform="translate(2.48 -3.12)"/>
+<use href="#molle-panel-halterung-p0" fill="#252826" transform="translate(1.86 -2.34)"/>
+<use href="#molle-panel-halterung-p0" fill="#262927" transform="translate(1.24 -1.56)"/>
+<use href="#molle-panel-halterung-p0" fill="#282a29" transform="translate(0.62 -0.78)"/>
 <use href="#molle-panel-halterung-p0" fill="url(#face)"/>
-<use href="#molle-panel-halterung-p0" fill="#000" filter="url(#grain)"/>
-<use href="#molle-panel-halterung-p0" fill="none" stroke="#4a504b" stroke-width="1.6" opacity=".75"/>
-<defs><path id="molle-panel-halterung-p1" d="M560 260H640V340" fill="none" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/></defs>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(30.6 -25.5)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(29.7 -24.8)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(28.8 -24.0)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(27.9 -23.2)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(27.0 -22.5)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(26.1 -21.8)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(25.2 -21.0)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(24.3 -20.2)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(23.4 -19.5)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(22.5 -18.8)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(21.6 -18.0)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(20.7 -17.2)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(19.8 -16.5)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(18.9 -15.8)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(18.0 -15.0)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(17.1 -14.2)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(16.2 -13.5)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(15.3 -12.8)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(14.4 -12.0)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(13.5 -11.2)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(12.6 -10.5)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(11.7 -9.8)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(10.8 -9.0)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(9.9 -8.2)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(9.0 -7.5)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(8.1 -6.8)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(7.2 -6.0)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(6.3 -5.2)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(5.4 -4.5)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(4.5 -3.8)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(3.6 -3.0)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(2.7 -2.2)"/>
-<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(1.8 -1.5)"/>
-<use href="#molle-panel-halterung-p1" stroke="#161917" transform="translate(0.9 -0.8)"/>
+<rect width="800" height="800" filter="url(#powder)" mask="url(#molle-panel-halterung-p0-m)"/>
+<rect width="800" height="800" fill="url(#spec)" mask="url(#molle-panel-halterung-p0-m)"/>
+<g mask="url(#molle-panel-halterung-p0-m)"><use href="#molle-panel-halterung-p0" fill="none" stroke="#7d847f" stroke-width="5" opacity=".55" transform="translate(2.4 2.4)"/><use href="#molle-panel-halterung-p0" fill="none" stroke="#000" stroke-width="5" opacity=".35" transform="translate(-2.4 -2.4)"/></g>
+<g><text x="400.8" y="590.8" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="12" letter-spacing="4.6" fill="#7d847f" opacity=".35">ROAMETRIC</text><text x="400" y="590" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="12" letter-spacing="4.6" fill="#0b0c0c" opacity=".75">ROAMETRIC</text></g>
+<defs><path id="molle-panel-halterung-p1" d="M560 235H648V330" fill="none" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/><mask id="molle-panel-halterung-p1-m"><use href="#molle-panel-halterung-p1" stroke="#fff"/></mask></defs>
+<use href="#molle-panel-halterung-p1" stroke="#0e100f" transform="translate(22.32 -28.08)"/>
+<use href="#molle-panel-halterung-p1" stroke="#0e100f" transform="translate(21.70 -27.30)"/>
+<use href="#molle-panel-halterung-p1" stroke="#0f1110" transform="translate(21.08 -26.52)"/>
+<use href="#molle-panel-halterung-p1" stroke="#0f1110" transform="translate(20.46 -25.74)"/>
+<use href="#molle-panel-halterung-p1" stroke="#101211" transform="translate(19.84 -24.96)"/>
+<use href="#molle-panel-halterung-p1" stroke="#111312" transform="translate(19.22 -24.18)"/>
+<use href="#molle-panel-halterung-p1" stroke="#111312" transform="translate(18.60 -23.40)"/>
+<use href="#molle-panel-halterung-p1" stroke="#121413" transform="translate(17.98 -22.62)"/>
+<use href="#molle-panel-halterung-p1" stroke="#131514" transform="translate(17.36 -21.84)"/>
+<use href="#molle-panel-halterung-p1" stroke="#131514" transform="translate(16.74 -21.06)"/>
+<use href="#molle-panel-halterung-p1" stroke="#141615" transform="translate(16.12 -20.28)"/>
+<use href="#molle-panel-halterung-p1" stroke="#151716" transform="translate(15.50 -19.50)"/>
+<use href="#molle-panel-halterung-p1" stroke="#151816" transform="translate(14.88 -18.72)"/>
+<use href="#molle-panel-halterung-p1" stroke="#161817" transform="translate(14.26 -17.94)"/>
+<use href="#molle-panel-halterung-p1" stroke="#171918" transform="translate(13.64 -17.16)"/>
+<use href="#molle-panel-halterung-p1" stroke="#171a18" transform="translate(13.02 -16.38)"/>
+<use href="#molle-panel-halterung-p1" stroke="#181a19" transform="translate(12.40 -15.60)"/>
+<use href="#molle-panel-halterung-p1" stroke="#191b1a" transform="translate(11.78 -14.82)"/>
+<use href="#molle-panel-halterung-p1" stroke="#191c1a" transform="translate(11.16 -14.04)"/>
+<use href="#molle-panel-halterung-p1" stroke="#1a1d1b" transform="translate(10.54 -13.26)"/>
+<use href="#molle-panel-halterung-p1" stroke="#1b1d1c" transform="translate(9.92 -12.48)"/>
+<use href="#molle-panel-halterung-p1" stroke="#1c1e1d" transform="translate(9.30 -11.70)"/>
+<use href="#molle-panel-halterung-p1" stroke="#1c1f1d" transform="translate(8.68 -10.92)"/>
+<use href="#molle-panel-halterung-p1" stroke="#1d201e" transform="translate(8.06 -10.14)"/>
+<use href="#molle-panel-halterung-p1" stroke="#1e201f" transform="translate(7.44 -9.36)"/>
+<use href="#molle-panel-halterung-p1" stroke="#1f2120" transform="translate(6.82 -8.58)"/>
+<use href="#molle-panel-halterung-p1" stroke="#1f2220" transform="translate(6.20 -7.80)"/>
+<use href="#molle-panel-halterung-p1" stroke="#202321" transform="translate(5.58 -7.02)"/>
+<use href="#molle-panel-halterung-p1" stroke="#212422" transform="translate(4.96 -6.24)"/>
+<use href="#molle-panel-halterung-p1" stroke="#222523" transform="translate(4.34 -5.46)"/>
+<use href="#molle-panel-halterung-p1" stroke="#232624" transform="translate(3.72 -4.68)"/>
+<use href="#molle-panel-halterung-p1" stroke="#242725" transform="translate(3.10 -3.90)"/>
+<use href="#molle-panel-halterung-p1" stroke="#252726" transform="translate(2.48 -3.12)"/>
+<use href="#molle-panel-halterung-p1" stroke="#262927" transform="translate(1.86 -2.34)"/>
+<use href="#molle-panel-halterung-p1" stroke="#272a28" transform="translate(1.24 -1.56)"/>
+<use href="#molle-panel-halterung-p1" stroke="#282b29" transform="translate(0.62 -0.78)"/>
 <use href="#molle-panel-halterung-p1" stroke="url(#face)"/>
-<use href="#molle-panel-halterung-p1" stroke="#000" filter="url(#grain)"/>
+<rect width="800" height="800" filter="url(#powder)" mask="url(#molle-panel-halterung-p1-m)"/>
+<rect width="800" height="800" fill="url(#spec)" mask="url(#molle-panel-halterung-p1-m)"/>
+<g mask="url(#molle-panel-halterung-p1-m)"><use href="#molle-panel-halterung-p1" stroke="#7d847f" opacity=".22" transform="translate(-10.9 -10.9)"/><use href="#molle-panel-halterung-p1" stroke="#000" opacity=".25" transform="translate(12.2 12.2)"/></g>
+<defs><path id="molle-panel-halterung-p2" d="M240 235H152V330" fill="none" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/><mask id="molle-panel-halterung-p2-m"><use href="#molle-panel-halterung-p2" stroke="#fff"/></mask></defs>
+<use href="#molle-panel-halterung-p2" stroke="#0e100f" transform="translate(22.32 -28.08)"/>
+<use href="#molle-panel-halterung-p2" stroke="#0e100f" transform="translate(21.70 -27.30)"/>
+<use href="#molle-panel-halterung-p2" stroke="#0f1110" transform="translate(21.08 -26.52)"/>
+<use href="#molle-panel-halterung-p2" stroke="#0f1110" transform="translate(20.46 -25.74)"/>
+<use href="#molle-panel-halterung-p2" stroke="#101211" transform="translate(19.84 -24.96)"/>
+<use href="#molle-panel-halterung-p2" stroke="#111312" transform="translate(19.22 -24.18)"/>
+<use href="#molle-panel-halterung-p2" stroke="#111312" transform="translate(18.60 -23.40)"/>
+<use href="#molle-panel-halterung-p2" stroke="#121413" transform="translate(17.98 -22.62)"/>
+<use href="#molle-panel-halterung-p2" stroke="#131514" transform="translate(17.36 -21.84)"/>
+<use href="#molle-panel-halterung-p2" stroke="#131514" transform="translate(16.74 -21.06)"/>
+<use href="#molle-panel-halterung-p2" stroke="#141615" transform="translate(16.12 -20.28)"/>
+<use href="#molle-panel-halterung-p2" stroke="#151716" transform="translate(15.50 -19.50)"/>
+<use href="#molle-panel-halterung-p2" stroke="#151816" transform="translate(14.88 -18.72)"/>
+<use href="#molle-panel-halterung-p2" stroke="#161817" transform="translate(14.26 -17.94)"/>
+<use href="#molle-panel-halterung-p2" stroke="#171918" transform="translate(13.64 -17.16)"/>
+<use href="#molle-panel-halterung-p2" stroke="#171a18" transform="translate(13.02 -16.38)"/>
+<use href="#molle-panel-halterung-p2" stroke="#181a19" transform="translate(12.40 -15.60)"/>
+<use href="#molle-panel-halterung-p2" stroke="#191b1a" transform="translate(11.78 -14.82)"/>
+<use href="#molle-panel-halterung-p2" stroke="#191c1a" transform="translate(11.16 -14.04)"/>
+<use href="#molle-panel-halterung-p2" stroke="#1a1d1b" transform="translate(10.54 -13.26)"/>
+<use href="#molle-panel-halterung-p2" stroke="#1b1d1c" transform="translate(9.92 -12.48)"/>
+<use href="#molle-panel-halterung-p2" stroke="#1c1e1d" transform="translate(9.30 -11.70)"/>
+<use href="#molle-panel-halterung-p2" stroke="#1c1f1d" transform="translate(8.68 -10.92)"/>
+<use href="#molle-panel-halterung-p2" stroke="#1d201e" transform="translate(8.06 -10.14)"/>
+<use href="#molle-panel-halterung-p2" stroke="#1e201f" transform="translate(7.44 -9.36)"/>
+<use href="#molle-panel-halterung-p2" stroke="#1f2120" transform="translate(6.82 -8.58)"/>
+<use href="#molle-panel-halterung-p2" stroke="#1f2220" transform="translate(6.20 -7.80)"/>
+<use href="#molle-panel-halterung-p2" stroke="#202321" transform="translate(5.58 -7.02)"/>
+<use href="#molle-panel-halterung-p2" stroke="#212422" transform="translate(4.96 -6.24)"/>
+<use href="#molle-panel-halterung-p2" stroke="#222523" transform="translate(4.34 -5.46)"/>
+<use href="#molle-panel-halterung-p2" stroke="#232624" transform="translate(3.72 -4.68)"/>
+<use href="#molle-panel-halterung-p2" stroke="#242725" transform="translate(3.10 -3.90)"/>
+<use href="#molle-panel-halterung-p2" stroke="#252726" transform="translate(2.48 -3.12)"/>
+<use href="#molle-panel-halterung-p2" stroke="#262927" transform="translate(1.86 -2.34)"/>
+<use href="#molle-panel-halterung-p2" stroke="#272a28" transform="translate(1.24 -1.56)"/>
+<use href="#molle-panel-halterung-p2" stroke="#282b29" transform="translate(0.62 -0.78)"/>
+<use href="#molle-panel-halterung-p2" stroke="url(#face)"/>
+<rect width="800" height="800" filter="url(#powder)" mask="url(#molle-panel-halterung-p2-m)"/>
+<rect width="800" height="800" fill="url(#spec)" mask="url(#molle-panel-halterung-p2-m)"/>
+<g mask="url(#molle-panel-halterung-p2-m)"><use href="#molle-panel-halterung-p2" stroke="#7d847f" opacity=".22" transform="translate(-10.9 -10.9)"/><use href="#molle-panel-halterung-p2" stroke="#000" opacity=".25" transform="translate(12.2 12.2)"/></g>
 </g></svg>

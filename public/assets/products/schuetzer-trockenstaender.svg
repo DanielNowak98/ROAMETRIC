@@ -1,193 +1,343 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" width="800" height="800">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
 <defs>
-<radialGradient id="bg" cx="50%" cy="38%" r="75%"><stop offset="0" stop-color="#f4efe6"/><stop offset=".65" stop-color="#e6dfd3"/><stop offset="1" stop-color="#d6cdbf"/></radialGradient>
-<linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2f2c"/><stop offset="1" stop-color="#1c1f1d"/></linearGradient>
-<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="22"/></filter>
-<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .07 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3eee5"/><stop offset=".62" stop-color="#e7e0d4"/><stop offset=".63" stop-color="#e2dacd"/><stop offset="1" stop-color="#d3c9ba"/></linearGradient>
+<radialGradient id="glow" cx="45%" cy="30%" r="60%"><stop offset="0" stop-color="#fffaf2" stop-opacity=".9"/><stop offset="1" stop-color="#fffaf2" stop-opacity="0"/></radialGradient>
+<filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+<filter id="tight" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="7"/></filter>
+<filter id="powder"><feTurbulence type="fractalNoise" baseFrequency="1.9" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .09 0"/></filter>
+<filter id="fiber"><feTurbulence type="fractalNoise" baseFrequency="0.02 1.4" numOctaves="2" seed="9"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .12 0"/></filter>
+<linearGradient id="face" x1="0" y1="0" x2=".35" y2="1"><stop offset="0" stop-color="#383c39"/><stop offset="1" stop-color="#1f2220"/></linearGradient>
+<radialGradient id="spec" cx="30%" cy="22%" r="55%"><stop offset="0" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
 </defs>
 <rect width="800" height="800" fill="url(#bg)"/>
-<ellipse cx="420" cy="628" rx="290" ry="40" fill="#3a332a" opacity=".3" filter="url(#shadow)"/>
-<g transform="translate(400 410) scale(1.18) translate(-400 -410)">
-<defs><path id="schuetzer-trockenstaender-p0" d="M252 520H548A22 22 0 0 1 570 542V558A22 22 0 0 1 548 580H252A22 22 0 0 1 230 558V542A22 22 0 0 1 252 520Z" fill-rule="evenodd"/></defs>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(81.0 -67.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(80.1 -66.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(79.2 -66.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(78.3 -65.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(77.4 -64.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(76.5 -63.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(75.6 -63.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(74.7 -62.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(73.8 -61.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(72.9 -60.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(72.0 -60.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(71.1 -59.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(70.2 -58.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(69.3 -57.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(68.4 -57.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(67.5 -56.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(66.6 -55.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(65.7 -54.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(64.8 -54.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(63.9 -53.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(63.0 -52.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(62.1 -51.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(61.2 -51.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(60.3 -50.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(59.4 -49.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(58.5 -48.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(57.6 -48.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(56.7 -47.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(55.8 -46.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(54.9 -45.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(54.0 -45.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(53.1 -44.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(52.2 -43.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(51.3 -42.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(50.4 -42.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(49.5 -41.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(48.6 -40.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(47.7 -39.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(46.8 -39.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(45.9 -38.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(45.0 -37.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(44.1 -36.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(43.2 -36.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(42.3 -35.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(41.4 -34.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(40.5 -33.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(39.6 -33.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(38.7 -32.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(37.8 -31.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(36.9 -30.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(36.0 -30.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(35.1 -29.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(34.2 -28.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(33.3 -27.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(32.4 -27.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(31.5 -26.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(30.6 -25.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(29.7 -24.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(28.8 -24.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(27.9 -23.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(27.0 -22.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(26.1 -21.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(25.2 -21.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(24.3 -20.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(23.4 -19.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(22.5 -18.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(21.6 -18.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(20.7 -17.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(19.8 -16.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(18.9 -15.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(18.0 -15.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(17.1 -14.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(16.2 -13.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(15.3 -12.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(14.4 -12.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(13.5 -11.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(12.6 -10.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(11.7 -9.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(10.8 -9.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(9.9 -8.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(9.0 -7.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(8.1 -6.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(7.2 -6.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(6.3 -5.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(5.4 -4.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(4.5 -3.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(3.6 -3.0)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(2.7 -2.2)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#121413" transform="translate(1.8 -1.5)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#161917" transform="translate(0.9 -0.8)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="url(#face)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="#000" filter="url(#grain)"/>
-<use href="#schuetzer-trockenstaender-p0" fill="none" stroke="#4a504b" stroke-width="1.6" opacity=".75"/>
-<defs><path id="schuetzer-trockenstaender-p1" d="M320 520V320Q320 280 350 280" fill="none" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/></defs>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(36.0 -30.0)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(35.1 -29.2)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(34.2 -28.5)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(33.3 -27.8)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(32.4 -27.0)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(31.5 -26.2)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(30.6 -25.5)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(29.7 -24.8)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(28.8 -24.0)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(27.9 -23.2)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(27.0 -22.5)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(26.1 -21.8)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(25.2 -21.0)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(24.3 -20.2)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(23.4 -19.5)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(22.5 -18.8)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(21.6 -18.0)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(20.7 -17.2)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(19.8 -16.5)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(18.9 -15.8)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(18.0 -15.0)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(17.1 -14.2)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(16.2 -13.5)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(15.3 -12.8)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(14.4 -12.0)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(13.5 -11.2)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(12.6 -10.5)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(11.7 -9.8)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(10.8 -9.0)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(9.9 -8.2)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(9.0 -7.5)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(8.1 -6.8)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(7.2 -6.0)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(6.3 -5.2)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(5.4 -4.5)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(4.5 -3.8)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(3.6 -3.0)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(2.7 -2.2)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#121413" transform="translate(1.8 -1.5)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#161917" transform="translate(0.9 -0.8)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="url(#face)"/>
-<use href="#schuetzer-trockenstaender-p1" stroke="#000" filter="url(#grain)"/>
-<defs><path id="schuetzer-trockenstaender-p2" d="M480 520V320Q480 280 450 280" fill="none" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/></defs>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(36.0 -30.0)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(35.1 -29.2)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(34.2 -28.5)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(33.3 -27.8)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(32.4 -27.0)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(31.5 -26.2)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(30.6 -25.5)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(29.7 -24.8)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(28.8 -24.0)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(27.9 -23.2)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(27.0 -22.5)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(26.1 -21.8)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(25.2 -21.0)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(24.3 -20.2)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(23.4 -19.5)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(22.5 -18.8)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(21.6 -18.0)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(20.7 -17.2)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(19.8 -16.5)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(18.9 -15.8)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(18.0 -15.0)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(17.1 -14.2)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(16.2 -13.5)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(15.3 -12.8)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(14.4 -12.0)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(13.5 -11.2)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(12.6 -10.5)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(11.7 -9.8)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(10.8 -9.0)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(9.9 -8.2)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(9.0 -7.5)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(8.1 -6.8)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(7.2 -6.0)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(6.3 -5.2)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(5.4 -4.5)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(4.5 -3.8)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(3.6 -3.0)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(2.7 -2.2)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#121413" transform="translate(1.8 -1.5)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#161917" transform="translate(0.9 -0.8)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="url(#face)"/>
-<use href="#schuetzer-trockenstaender-p2" stroke="#000" filter="url(#grain)"/>
-<defs><path id="schuetzer-trockenstaender-p3" d="M269.0 535H307.0A7.0 7.0 0 0 1 314 542.0V542.0A7.0 7.0 0 0 1 307.0 549H269.0A7.0 7.0 0 0 1 262 542.0V542.0A7.0 7.0 0 0 1 269.0 535ZM343.0 535H381.0A7.0 7.0 0 0 1 388 542.0V542.0A7.0 7.0 0 0 1 381.0 549H343.0A7.0 7.0 0 0 1 336 542.0V542.0A7.0 7.0 0 0 1 343.0 535ZM417.0 535H455.0A7.0 7.0 0 0 1 462 542.0V542.0A7.0 7.0 0 0 1 455.0 549H417.0A7.0 7.0 0 0 1 410 542.0V542.0A7.0 7.0 0 0 1 417.0 535ZM491.0 535H529.0A7.0 7.0 0 0 1 536 542.0V542.0A7.0 7.0 0 0 1 529.0 549H491.0A7.0 7.0 0 0 1 484 542.0V542.0A7.0 7.0 0 0 1 491.0 535Z" fill-rule="evenodd"/></defs>
-<use href="#schuetzer-trockenstaender-p3" fill="#121413" opacity=".9"/>
+<rect width="800" height="800" fill="url(#glow)"/>
+<ellipse cx="430" cy="636" rx="300" ry="46" fill="#3b3329" opacity=".26" filter="url(#soft)"/>
+<ellipse cx="420" cy="626" rx="220" ry="16" fill="#2a241d" opacity=".32" filter="url(#tight)"/>
+<g transform="translate(400 410) scale(1.16) translate(-400 -410)">
+<defs><path id="schuetzer-trockenstaender-p0" d="M232 578H260A6 6 0 0 1 266 584V590A6 6 0 0 1 260 596H232A6 6 0 0 1 226 590V584A6 6 0 0 1 232 578ZM540 578H568A6 6 0 0 1 574 584V590A6 6 0 0 1 568 596H540A6 6 0 0 1 534 590V584A6 6 0 0 1 540 578Z" fill-rule="evenodd"/><mask id="schuetzer-trockenstaender-p0-m"><use href="#schuetzer-trockenstaender-p0" fill="#fff"/></mask></defs>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(64.48 -81.12)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(63.86 -80.34)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(63.24 -79.56)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(62.62 -78.78)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(62.00 -78.00)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(61.38 -77.22)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(60.76 -76.44)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(60.14 -75.66)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(59.52 -74.88)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(58.90 -74.10)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(58.28 -73.32)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(57.66 -72.54)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(57.04 -71.76)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(56.42 -70.98)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0b0b0b" transform="translate(55.80 -70.20)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(55.18 -69.42)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(54.56 -68.64)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(53.94 -67.86)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(53.32 -67.08)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(52.70 -66.30)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(52.08 -65.52)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(51.46 -64.74)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(50.84 -63.96)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(50.22 -63.18)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(49.60 -62.40)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(48.98 -61.62)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(48.36 -60.84)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(47.74 -60.06)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0c0c0c" transform="translate(47.12 -59.28)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0d0d0d" transform="translate(46.50 -58.50)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0d0d0d" transform="translate(45.88 -57.72)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0d0d0d" transform="translate(45.26 -56.94)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0d0d0d" transform="translate(44.64 -56.16)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0d0d0d" transform="translate(44.02 -55.38)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0d0d0d" transform="translate(43.40 -54.60)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0d0d0d" transform="translate(42.78 -53.82)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0d0d0d" transform="translate(42.16 -53.04)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0d0d0d" transform="translate(41.54 -52.26)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0d0d0d" transform="translate(40.92 -51.48)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0d0d0d" transform="translate(40.30 -50.70)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0d0d0d" transform="translate(39.68 -49.92)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0d0d0d" transform="translate(39.06 -49.14)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0e0e0e" transform="translate(38.44 -48.36)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0e0e0e" transform="translate(37.82 -47.58)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0e0e0e" transform="translate(37.20 -46.80)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0e0e0e" transform="translate(36.58 -46.02)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0e0e0e" transform="translate(35.96 -45.24)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0e0e0e" transform="translate(35.34 -44.46)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0e0e0e" transform="translate(34.72 -43.68)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0e0e0e" transform="translate(34.10 -42.90)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0e0e0e" transform="translate(33.48 -42.12)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0e0e0e" transform="translate(32.86 -41.34)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0e0e0e" transform="translate(32.24 -40.56)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0e0e0e" transform="translate(31.62 -39.78)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0e0e0e" transform="translate(31.00 -39.00)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0f0f0f" transform="translate(30.38 -38.22)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0f0f0f" transform="translate(29.76 -37.44)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0f0f0f" transform="translate(29.14 -36.66)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0f0f0f" transform="translate(28.52 -35.88)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0f0f0f" transform="translate(27.90 -35.10)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0f0f0f" transform="translate(27.28 -34.32)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0f0f0f" transform="translate(26.66 -33.54)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0f0f0f" transform="translate(26.04 -32.76)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0f0f0f" transform="translate(25.42 -31.98)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0f0f0f" transform="translate(24.80 -31.20)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0f0f0f" transform="translate(24.18 -30.42)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#0f0f0f" transform="translate(23.56 -29.64)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#101010" transform="translate(22.94 -28.86)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#101010" transform="translate(22.32 -28.08)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#101010" transform="translate(21.70 -27.30)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#101010" transform="translate(21.08 -26.52)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#101010" transform="translate(20.46 -25.74)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#101010" transform="translate(19.84 -24.96)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#101010" transform="translate(19.22 -24.18)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#101010" transform="translate(18.60 -23.40)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#101010" transform="translate(17.98 -22.62)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#101010" transform="translate(17.36 -21.84)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#101010" transform="translate(16.74 -21.06)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#111111" transform="translate(16.12 -20.28)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#111111" transform="translate(15.50 -19.50)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#111111" transform="translate(14.88 -18.72)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#111111" transform="translate(14.26 -17.94)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#111111" transform="translate(13.64 -17.16)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#111111" transform="translate(13.02 -16.38)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#111111" transform="translate(12.40 -15.60)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#111111" transform="translate(11.78 -14.82)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#111111" transform="translate(11.16 -14.04)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#111111" transform="translate(10.54 -13.26)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#111111" transform="translate(9.92 -12.48)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#121212" transform="translate(9.30 -11.70)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#121212" transform="translate(8.68 -10.92)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#121212" transform="translate(8.06 -10.14)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#121212" transform="translate(7.44 -9.36)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#121212" transform="translate(6.82 -8.58)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#121212" transform="translate(6.20 -7.80)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#121212" transform="translate(5.58 -7.02)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#121212" transform="translate(4.96 -6.24)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#121212" transform="translate(4.34 -5.46)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#131313" transform="translate(3.72 -4.68)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#131313" transform="translate(3.10 -3.90)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#131313" transform="translate(2.48 -3.12)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#131313" transform="translate(1.86 -2.34)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#131313" transform="translate(1.24 -1.56)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#131313" transform="translate(0.62 -0.78)"/>
+<use href="#schuetzer-trockenstaender-p0" fill="#1b1b1b"/>
+<rect width="800" height="800" filter="url(#powder)" mask="url(#schuetzer-trockenstaender-p0-m)"/>
+<rect width="800" height="800" fill="url(#spec)" mask="url(#schuetzer-trockenstaender-p0-m)"/>
+<g mask="url(#schuetzer-trockenstaender-p0-m)"><use href="#schuetzer-trockenstaender-p0" fill="none" stroke="#202020" stroke-width="5" opacity=".55" transform="translate(2.4 2.4)"/><use href="#schuetzer-trockenstaender-p0" fill="none" stroke="#000" stroke-width="5" opacity=".35" transform="translate(-2.4 -2.4)"/></g>
+<defs><path id="schuetzer-trockenstaender-p1" d="M236 515H564A26 26 0 0 1 590 541V559A26 26 0 0 1 564 585H236A26 26 0 0 1 210 559V541A26 26 0 0 1 236 515Z" fill-rule="evenodd"/><mask id="schuetzer-trockenstaender-p1-m"><use href="#schuetzer-trockenstaender-p1" fill="#fff"/></mask></defs>
+<use href="#schuetzer-trockenstaender-p1" fill="#0e100f" transform="translate(68.20 -85.80)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#0e100f" transform="translate(67.58 -85.02)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#0e100f" transform="translate(66.96 -84.24)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#0e100f" transform="translate(66.34 -83.46)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#0e100f" transform="translate(65.72 -82.68)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#0f1110" transform="translate(65.10 -81.90)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#0f1110" transform="translate(64.48 -81.12)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#0f1110" transform="translate(63.86 -80.34)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#0f1110" transform="translate(63.24 -79.56)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#0f1110" transform="translate(62.62 -78.78)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#101211" transform="translate(62.00 -78.00)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#101211" transform="translate(61.38 -77.22)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#101211" transform="translate(60.76 -76.44)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#101211" transform="translate(60.14 -75.66)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#101211" transform="translate(59.52 -74.88)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#111312" transform="translate(58.90 -74.10)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#111312" transform="translate(58.28 -73.32)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#111312" transform="translate(57.66 -72.54)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#111312" transform="translate(57.04 -71.76)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#111412" transform="translate(56.42 -70.98)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#121413" transform="translate(55.80 -70.20)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#121413" transform="translate(55.18 -69.42)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#121413" transform="translate(54.56 -68.64)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#121413" transform="translate(53.94 -67.86)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#131514" transform="translate(53.32 -67.08)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#131514" transform="translate(52.70 -66.30)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#131514" transform="translate(52.08 -65.52)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#131514" transform="translate(51.46 -64.74)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#131614" transform="translate(50.84 -63.96)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#141615" transform="translate(50.22 -63.18)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#141615" transform="translate(49.60 -62.40)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#141615" transform="translate(48.98 -61.62)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#141615" transform="translate(48.36 -60.84)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#141715" transform="translate(47.74 -60.06)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#151716" transform="translate(47.12 -59.28)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#151716" transform="translate(46.50 -58.50)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#151716" transform="translate(45.88 -57.72)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#151816" transform="translate(45.26 -56.94)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#161817" transform="translate(44.64 -56.16)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#161817" transform="translate(44.02 -55.38)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#161817" transform="translate(43.40 -54.60)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#161917" transform="translate(42.78 -53.82)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#161917" transform="translate(42.16 -53.04)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#171918" transform="translate(41.54 -52.26)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#171918" transform="translate(40.92 -51.48)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#171918" transform="translate(40.30 -50.70)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#171a18" transform="translate(39.68 -49.92)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#181a19" transform="translate(39.06 -49.14)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#181a19" transform="translate(38.44 -48.36)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#181a19" transform="translate(37.82 -47.58)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#181b19" transform="translate(37.20 -46.80)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#181b19" transform="translate(36.58 -46.02)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#191b1a" transform="translate(35.96 -45.24)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#191b1a" transform="translate(35.34 -44.46)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#191c1a" transform="translate(34.72 -43.68)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#191c1a" transform="translate(34.10 -42.90)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1a1c1b" transform="translate(33.48 -42.12)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1a1c1b" transform="translate(32.86 -41.34)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1a1d1b" transform="translate(32.24 -40.56)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1a1d1b" transform="translate(31.62 -39.78)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1b1d1c" transform="translate(31.00 -39.00)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1b1d1c" transform="translate(30.38 -38.22)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1b1e1c" transform="translate(29.76 -37.44)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1b1e1c" transform="translate(29.14 -36.66)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1c1e1d" transform="translate(28.52 -35.88)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1c1e1d" transform="translate(27.90 -35.10)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1c1f1d" transform="translate(27.28 -34.32)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1c1f1d" transform="translate(26.66 -33.54)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1d1f1e" transform="translate(26.04 -32.76)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1d1f1e" transform="translate(25.42 -31.98)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1d201e" transform="translate(24.80 -31.20)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1d201e" transform="translate(24.18 -30.42)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1e201f" transform="translate(23.56 -29.64)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1e201f" transform="translate(22.94 -28.86)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1e211f" transform="translate(22.32 -28.08)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1e211f" transform="translate(21.70 -27.30)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1f2120" transform="translate(21.08 -26.52)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1f2120" transform="translate(20.46 -25.74)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1f2220" transform="translate(19.84 -24.96)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#1f2220" transform="translate(19.22 -24.18)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#202221" transform="translate(18.60 -23.40)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#202321" transform="translate(17.98 -22.62)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#202321" transform="translate(17.36 -21.84)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#202321" transform="translate(16.74 -21.06)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#212322" transform="translate(16.12 -20.28)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#212422" transform="translate(15.50 -19.50)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#212422" transform="translate(14.88 -18.72)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#212422" transform="translate(14.26 -17.94)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#222423" transform="translate(13.64 -17.16)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#222523" transform="translate(13.02 -16.38)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#222523" transform="translate(12.40 -15.60)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#232524" transform="translate(11.78 -14.82)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#232624" transform="translate(11.16 -14.04)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#232624" transform="translate(10.54 -13.26)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#242625" transform="translate(9.92 -12.48)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#242725" transform="translate(9.30 -11.70)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#242725" transform="translate(8.68 -10.92)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#242725" transform="translate(8.06 -10.14)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#252826" transform="translate(7.44 -9.36)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#252826" transform="translate(6.82 -8.58)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#252826" transform="translate(6.20 -7.80)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#262927" transform="translate(5.58 -7.02)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#262927" transform="translate(4.96 -6.24)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#262927" transform="translate(4.34 -5.46)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#272a28" transform="translate(3.72 -4.68)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#272a28" transform="translate(3.10 -3.90)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#282a29" transform="translate(2.48 -3.12)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#282b29" transform="translate(1.86 -2.34)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#282b29" transform="translate(1.24 -1.56)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="#292c2a" transform="translate(0.62 -0.78)"/>
+<use href="#schuetzer-trockenstaender-p1" fill="url(#face)"/>
+<rect width="800" height="800" filter="url(#powder)" mask="url(#schuetzer-trockenstaender-p1-m)"/>
+<rect width="800" height="800" fill="url(#spec)" mask="url(#schuetzer-trockenstaender-p1-m)"/>
+<g mask="url(#schuetzer-trockenstaender-p1-m)"><use href="#schuetzer-trockenstaender-p1" fill="none" stroke="#7d847f" stroke-width="5" opacity=".55" transform="translate(2.4 2.4)"/><use href="#schuetzer-trockenstaender-p1" fill="none" stroke="#000" stroke-width="5" opacity=".35" transform="translate(-2.4 -2.4)"/></g>
+<g><text x="400.8" y="566.8" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="12" letter-spacing="4.6" fill="#7d847f" opacity=".35">ROAMETRIC</text><text x="400" y="566" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="12" letter-spacing="4.6" fill="#0b0c0c" opacity=".75">ROAMETRIC</text></g>
+<defs><path id="schuetzer-trockenstaender-p2" d="M256.0 532H288.0A6.0 6.0 0 0 1 294 538.0V538.0A6.0 6.0 0 0 1 288.0 544H256.0A6.0 6.0 0 0 1 250 538.0V538.0A6.0 6.0 0 0 1 256.0 532ZM318.0 532H350.0A6.0 6.0 0 0 1 356 538.0V538.0A6.0 6.0 0 0 1 350.0 544H318.0A6.0 6.0 0 0 1 312 538.0V538.0A6.0 6.0 0 0 1 318.0 532ZM380.0 532H412.0A6.0 6.0 0 0 1 418 538.0V538.0A6.0 6.0 0 0 1 412.0 544H380.0A6.0 6.0 0 0 1 374 538.0V538.0A6.0 6.0 0 0 1 380.0 532ZM442.0 532H474.0A6.0 6.0 0 0 1 480 538.0V538.0A6.0 6.0 0 0 1 474.0 544H442.0A6.0 6.0 0 0 1 436 538.0V538.0A6.0 6.0 0 0 1 442.0 532ZM504.0 532H536.0A6.0 6.0 0 0 1 542 538.0V538.0A6.0 6.0 0 0 1 536.0 544H504.0A6.0 6.0 0 0 1 498 538.0V538.0A6.0 6.0 0 0 1 504.0 532Z" fill-rule="evenodd"/><mask id="schuetzer-trockenstaender-p2-m"><use href="#schuetzer-trockenstaender-p2" fill="#fff"/></mask></defs>
+<use href="#schuetzer-trockenstaender-p2" fill="#0e100f" opacity=".95"/>
+<use href="#schuetzer-trockenstaender-p2" fill="#7d847f" opacity=".35" transform="translate(1.2 1.6)" mask="url(#schuetzer-trockenstaender-p2-m)"/>
+<defs><path id="schuetzer-trockenstaender-p3" d="M316 515V320Q316 262 370 262" fill="none" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/><mask id="schuetzer-trockenstaender-p3-m"><use href="#schuetzer-trockenstaender-p3" stroke="#fff"/></mask></defs>
+<use href="#schuetzer-trockenstaender-p3" stroke="#0e100f" transform="translate(27.28 -34.32)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#0e100f" transform="translate(26.66 -33.54)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#0f1110" transform="translate(26.04 -32.76)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#0f1110" transform="translate(25.42 -31.98)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#101211" transform="translate(24.80 -31.20)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#101211" transform="translate(24.18 -30.42)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#111312" transform="translate(23.56 -29.64)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#111312" transform="translate(22.94 -28.86)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#121413" transform="translate(22.32 -28.08)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#121413" transform="translate(21.70 -27.30)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#131514" transform="translate(21.08 -26.52)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#131514" transform="translate(20.46 -25.74)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#141615" transform="translate(19.84 -24.96)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#141715" transform="translate(19.22 -24.18)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#151716" transform="translate(18.60 -23.40)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#151816" transform="translate(17.98 -22.62)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#161817" transform="translate(17.36 -21.84)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#171918" transform="translate(16.74 -21.06)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#171918" transform="translate(16.12 -20.28)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#181a19" transform="translate(15.50 -19.50)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#181b19" transform="translate(14.88 -18.72)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#191b1a" transform="translate(14.26 -17.94)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#191c1a" transform="translate(13.64 -17.16)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#1a1c1b" transform="translate(13.02 -16.38)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#1b1d1c" transform="translate(12.40 -15.60)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#1b1e1c" transform="translate(11.78 -14.82)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#1c1e1d" transform="translate(11.16 -14.04)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#1c1f1d" transform="translate(10.54 -13.26)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#1d201e" transform="translate(9.92 -12.48)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#1e201f" transform="translate(9.30 -11.70)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#1e211f" transform="translate(8.68 -10.92)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#1f2220" transform="translate(8.06 -10.14)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#202221" transform="translate(7.44 -9.36)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#202321" transform="translate(6.82 -8.58)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#212422" transform="translate(6.20 -7.80)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#222423" transform="translate(5.58 -7.02)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#222523" transform="translate(4.96 -6.24)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#232624" transform="translate(4.34 -5.46)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#242725" transform="translate(3.72 -4.68)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#252726" transform="translate(3.10 -3.90)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#252826" transform="translate(2.48 -3.12)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#262927" transform="translate(1.86 -2.34)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#272a28" transform="translate(1.24 -1.56)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="#282b29" transform="translate(0.62 -0.78)"/>
+<use href="#schuetzer-trockenstaender-p3" stroke="url(#face)"/>
+<rect width="800" height="800" filter="url(#powder)" mask="url(#schuetzer-trockenstaender-p3-m)"/>
+<rect width="800" height="800" fill="url(#spec)" mask="url(#schuetzer-trockenstaender-p3-m)"/>
+<g mask="url(#schuetzer-trockenstaender-p3-m)"><use href="#schuetzer-trockenstaender-p3" stroke="#7d847f" opacity=".22" transform="translate(-10.9 -10.9)"/><use href="#schuetzer-trockenstaender-p3" stroke="#000" opacity=".25" transform="translate(12.2 12.2)"/></g>
+<defs><path id="schuetzer-trockenstaender-p4" d="M484 515V320Q484 262 430 262" fill="none" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/><mask id="schuetzer-trockenstaender-p4-m"><use href="#schuetzer-trockenstaender-p4" stroke="#fff"/></mask></defs>
+<use href="#schuetzer-trockenstaender-p4" stroke="#0e100f" transform="translate(27.28 -34.32)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#0e100f" transform="translate(26.66 -33.54)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#0f1110" transform="translate(26.04 -32.76)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#0f1110" transform="translate(25.42 -31.98)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#101211" transform="translate(24.80 -31.20)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#101211" transform="translate(24.18 -30.42)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#111312" transform="translate(23.56 -29.64)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#111312" transform="translate(22.94 -28.86)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#121413" transform="translate(22.32 -28.08)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#121413" transform="translate(21.70 -27.30)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#131514" transform="translate(21.08 -26.52)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#131514" transform="translate(20.46 -25.74)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#141615" transform="translate(19.84 -24.96)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#141715" transform="translate(19.22 -24.18)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#151716" transform="translate(18.60 -23.40)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#151816" transform="translate(17.98 -22.62)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#161817" transform="translate(17.36 -21.84)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#171918" transform="translate(16.74 -21.06)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#171918" transform="translate(16.12 -20.28)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#181a19" transform="translate(15.50 -19.50)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#181b19" transform="translate(14.88 -18.72)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#191b1a" transform="translate(14.26 -17.94)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#191c1a" transform="translate(13.64 -17.16)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#1a1c1b" transform="translate(13.02 -16.38)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#1b1d1c" transform="translate(12.40 -15.60)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#1b1e1c" transform="translate(11.78 -14.82)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#1c1e1d" transform="translate(11.16 -14.04)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#1c1f1d" transform="translate(10.54 -13.26)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#1d201e" transform="translate(9.92 -12.48)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#1e201f" transform="translate(9.30 -11.70)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#1e211f" transform="translate(8.68 -10.92)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#1f2220" transform="translate(8.06 -10.14)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#202221" transform="translate(7.44 -9.36)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#202321" transform="translate(6.82 -8.58)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#212422" transform="translate(6.20 -7.80)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#222423" transform="translate(5.58 -7.02)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#222523" transform="translate(4.96 -6.24)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#232624" transform="translate(4.34 -5.46)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#242725" transform="translate(3.72 -4.68)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#252726" transform="translate(3.10 -3.90)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#252826" transform="translate(2.48 -3.12)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#262927" transform="translate(1.86 -2.34)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#272a28" transform="translate(1.24 -1.56)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="#282b29" transform="translate(0.62 -0.78)"/>
+<use href="#schuetzer-trockenstaender-p4" stroke="url(#face)"/>
+<rect width="800" height="800" filter="url(#powder)" mask="url(#schuetzer-trockenstaender-p4-m)"/>
+<rect width="800" height="800" fill="url(#spec)" mask="url(#schuetzer-trockenstaender-p4-m)"/>
+<g mask="url(#schuetzer-trockenstaender-p4-m)"><use href="#schuetzer-trockenstaender-p4" stroke="#7d847f" opacity=".22" transform="translate(-10.9 -10.9)"/><use href="#schuetzer-trockenstaender-p4" stroke="#000" opacity=".25" transform="translate(12.2 12.2)"/></g>
 </g></svg>

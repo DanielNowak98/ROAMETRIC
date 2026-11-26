@@ -4,6 +4,7 @@ import Link from '../../link';
 import { useState, type MouseEvent } from 'react';
 import { categories, categorySlug, materials, products, type Product } from '../../data';
 import { InquiryButton, useInquiry } from '../../inquiry';
+import { detailFor } from '../../product-details';
 import { Footer, formatPrice, Header, ProductCard } from '../../ui';
 
 type View = 'full' | 'detail' | 'drawing';
@@ -37,6 +38,7 @@ export default function ProductClient({ product: p }: { product: Product }) {
   const [origin, setOrigin] = useState('50% 50%');
   const [zooming, setZooming] = useState(false);
   const material = materials[p.material];
+  const detail = detailFor(p.slug);
   const canZoom = Boolean(p.image) && view !== 'drawing';
   const track = (event: MouseEvent<HTMLDivElement>) => {
     const rect = event.currentTarget.getBoundingClientRect();
@@ -45,7 +47,7 @@ export default function ProductClient({ product: p }: { product: Product }) {
   const specRows: { label: string; value: string }[] = [
     { label: 'Werkstoff', value: material ? `${p.material} · ${material.name}` : p.material },
     { label: 'Verfahren', value: material?.process || 'Additive Fertigung' },
-    ...(p.specs || []),
+    ...(detail?.specs || p.specs || []),
     { label: 'Einsatzbereich', value: p.category },
     { label: 'Herkunft', value: 'Deutschland' },
   ];
@@ -70,10 +72,11 @@ export default function ProductClient({ product: p }: { product: Product }) {
         <div className="buy-panel">
           <p className="eyebrow">{p.category.toUpperCase()} · {p.material}</p>
           <h1>{p.name}</h1>
+          {detail && <p className="tagline">{detail.tagline}</p>}
           <p className="price">{formatPrice(p.price)}</p>
           <p className="tax">Richtpreis inkl. MwSt. · finales Angebot nach Anfrage</p>
           <p className="lead">{p.desc}</p>
-          <ul className="product-benefits">{(material?.traits ?? ['Passgenau konstruiert']).slice(0, 3).map((trait) => <li key={trait}>{trait}</li>)}<li>Konstruiert &amp; gefertigt in Deutschland</li></ul>
+          <ul className="product-benefits">{(detail ? detail.highlights.map((h) => h.title) : (material?.traits ?? ['Passgenau konstruiert'])).slice(0, 3).map((t) => <li key={t}>{t}</li>)}<li>Konstruiert &amp; gefertigt in Deutschland</li></ul>
           <div className="qty-control" role="group" aria-label="Menge">
             <b>MENGE</b>
             <button type="button" aria-label="Menge verringern" disabled={quantity <= 1} onClick={() => setQuantity((q) => Math.max(1, q - 1))}>−</button>
@@ -98,8 +101,12 @@ export default function ProductClient({ product: p }: { product: Product }) {
           <button type="button" role="tab" aria-selected={tab === 'anfrage'} className={tab === 'anfrage' ? 'active' : ''} onClick={() => setTab('anfrage')}>Anfrage &amp; Lieferung</button>
         </div>
         <div className="tab-panel" role="tabpanel" key={tab}>
-          {tab === 'beschreibung' && <div className="tab-cols"><div><h2>Funktion vor Form.</h2><p>{p.desc} Jedes ROAMETRIC Bauteil wird vom realen Einsatz aus konstruiert — mit Blick auf Kraftfluss, Montage und Lebensdauer.</p></div>{material && <div className="material-note"><span className="material-code">{material.code}</span><h3>{material.name}</h3><ul>{material.traits.map((t) => <li key={t}>{t}</li>)}</ul></div>}</div>}
-          {tab === 'daten' && <div><dl className="spec-table">{specRows.map((row) => <div key={row.label}><dt>{row.label}</dt><dd>{row.value}</dd></div>)}</dl>{!p.specs?.length && <p className="spec-note">Abmessungen und Gewicht werden gerade final vermessen und hier ergänzt.</p>}</div>}
+          {tab === 'beschreibung' && <div className="desc-v3">
+            <div className="tab-cols"><div><h2>{detail?.tagline ?? 'Funktion vor Form.'}</h2>{(detail?.story ?? [p.desc]).map((para, i) => <p key={i}>{para}</p>)}</div>{material && <div className="material-note"><span className="material-code">{material.code}</span><h3>{material.name}</h3><small>{material.process}</small><ul>{material.traits.map((t) => <li key={t}>{t}</li>)}</ul></div>}</div>
+            {detail && <div className="highlight-grid">{detail.highlights.map((h, i) => <article key={h.title}><b>{String(i + 1).padStart(2, '0')}</b><h3>{h.title}</h3><p>{h.text}</p></article>)}</div>}
+            {detail && <div className="use-cases"><b>IDEAL FÜR</b><div>{detail.useCases.map((u) => <span key={u}>{u}</span>)}</div></div>}
+          </div>}
+          {tab === 'daten' && <div><dl className="spec-table">{specRows.map((row) => <div key={row.label}><dt>{row.label}</dt><dd>{row.value}</dd></div>)}</dl>{detail ? <p className="spec-note">Richtwerte des Beispielprodukts — finale Maße folgen mit dem Serienteil.</p> : !p.specs?.length && <p className="spec-note">Abmessungen und Gewicht werden gerade final vermessen und hier ergänzt.</p>}{detail && <div className="tab-cols box-care"><div><h3>Lieferumfang</h3><ul className="check-list">{detail.inBox.map((x) => <li key={x}>{x}</li>)}</ul></div><div><h3>Pflege</h3><p>{detail.care}</p></div></div>}</div>}
           {tab === 'anfrage' && <div className="tab-cols"><div><h2>So läuft deine Anfrage.</h2><p>Leg das Teil mit der gewünschten Menge in deine Anfrage und schick sie ab. Wir melden uns mit finalem Preis, Lieferzeit und — falls nötig — Anpassungsvorschlägen für dein Setup.</p><Link className="text-link" href="/anfrage">Zur Anfrage →</Link></div><div className="material-note"><span className="material-code">{formatPrice(p.price)}</span><h3>Richtpreis inkl. MwSt.</h3><ul><li>Finales Angebot nach Anfrage</li><li>Individuelle Varianten möglich</li><li>Fertigung in Deutschland</li></ul></div></div>}
         </div>
       </section>

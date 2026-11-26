@@ -164,3 +164,25 @@
 /* Collage: Graustufen der BJJ-Kachel ohne CSS-Filter, damit die Beschriftung nicht mit abgedunkelt wird */
 .hero-tile-bjj,.hero-tile-bjj:hover{filter:none;background-color:#7d7d7d;background-blend-mode:luminosity}
 .hero-tile-label{opacity:1;text-shadow:0 1px 10px #000c,0 0 2px #000}
+
+/* ---------- Produktinhalte ---------- */
+.pc3 .product-info .pc3-tag{grid-column:1/-1;font:400 12px/1.45 var(--font-sans);letter-spacing:0;color:#6e6f69;margin:-2px 0 0;min-height:34px}
+.buy-panel .tagline{font-size:17px;line-height:1.45;color:#4f504b;margin:-4px 0 18px;max-width:460px}
+.desc-v3 .tab-cols p{margin:0 0 16px}
+.material-note small{display:block;font:9px var(--font-mono);letter-spacing:.12em;text-transform:uppercase;color:#9a9c95;margin:-8px 0 14px}
+.highlight-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:44px}
+.highlight-grid article{border:1px solid var(--line);background:#ece7de;padding:24px 22px;transition:background .3s,color .3s,transform .3s var(--ease)}
+.highlight-grid article:hover{background:var(--ink);color:white;transform:translateY(-4px)}
+.highlight-grid article:hover p{color:#c2c4bd}
+.highlight-grid b{font:700 10px var(--font-mono);color:#8b6a43;letter-spacing:.12em}
+.highlight-grid article:hover b{color:var(--sand)}
+.highlight-grid h3{font-size:15px;margin:14px 0 8px}
+.highlight-grid p{font-size:13px!important;line-height:1.6!important;margin:0!important;color:#5f605a}
+.use-cases{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
+.use-cases b{font:700 9px var(--font-mono);letter-spacing:.14em}
+.use-cases div{display:flex;flex-wrap:wrap;gap:8px}
+.use-cases span{border:1px solid #c9c2b6;padding:8px 12px;font-size:12px}
+.box-care{margin-top:40px}
+.box-care h3{font:700 10px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;margin:0 0 10px}
+@media(max-width:1100px){.highlight-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.highlight-grid{grid-template-columns:1fr}}
