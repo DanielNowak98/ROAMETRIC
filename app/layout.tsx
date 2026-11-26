@@ -4,6 +4,7 @@ import './globals.css';
 import './logo.css';
 import './shop-system.css';
 import './new-style.css';
+import './v3.css';
 import { runtimeValue } from '../lib/runtime';
 const sans = Geist({ variable: '--font-sans', subsets: ['latin'] });
 const mono = Geist_Mono({ variable: '--font-mono', subsets: ['latin'] });
