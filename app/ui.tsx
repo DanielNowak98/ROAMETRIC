@@ -6,7 +6,7 @@ import { categories, legalLinks, type Product } from './data';
 import { InquiryButton, InquiryToast, useInquiry } from './inquiry';
 import { detailFor } from './product-details';
 
-export function formatPrice(value: number) { return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' }); }
+export function formatPrice(value?: number) { return value == null ? 'Preis auf Anfrage' : value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' }); }
 
 export function Header() {
   const [menu,setMenu] = useState(false); const { count } = useInquiry();
@@ -23,5 +23,5 @@ export function Footer(){
     <div className="shell footer-bottom"><span>© 2026 ROAMETRIC · Precision for the Journey</span><div className="footer-legal" role="navigation" aria-label="Rechtliches">{legalLinks.map(link=><Link key={link.href} href={link.href}>{link.label}</Link>)}</div></div>
   </footer>
 }
-export function ProductVisual({p,large=false}:{p:Product;large?:boolean}){return <div className={`product-visual ${large?'large':''}`}>{p.image?<div className="product-photo" style={{backgroundImage:`url('${p.image}')`,backgroundPosition:p.imagePosition||'center',backgroundSize:p.imageSize||'cover'}}/>:<div className="product-photo product-photo-placeholder" aria-label="Produktbild folgt"><span>{p.category}</span><small>Bild folgt</small></div>}<em>{p.material}</em></div>}
+export function ProductVisual({p,large=false}:{p:Product;large?:boolean}){return <div className={`product-visual ${large?'large':''}`}>{p.image?<div className="product-photo" style={{backgroundImage:`url('${p.image}')`,backgroundPosition:p.imagePosition||'center',backgroundSize:p.imageSize||'cover'}}/>:<div className="product-photo product-photo-placeholder" aria-label="Produktbild folgt"><span>{p.category}</span><small>Bild folgt</small></div>}{p.images?.[0]&&<div className="product-photo alt" aria-hidden="true" style={{backgroundImage:`url('${p.images[0]}')`,backgroundSize:'cover',backgroundPosition:'center'}}/>}<em>{p.material}</em></div>}
 export function ProductCard({product:p,index}:{product:Product;index?:number}){return <article className="product-card pc3"><Link href={`/produkt/${p.slug}`} className="pc3-media"><ProductVisual p={p}/><span className="pc3-corner" aria-hidden="true"/>{typeof index==='number'&&<span className="pc3-index">{String(index+1).padStart(2,'0')}</span>}<span className="pc3-view">Details ansehen →</span></Link><div className="product-info"><p>{p.category.toUpperCase()} <i>·</i> {p.material}</p><Link href={`/produkt/${p.slug}`}><h3>{p.name}</h3></Link><strong>{formatPrice(p.price)}</strong>{detailFor(p.slug)&&<p className="pc3-tag">{detailFor(p.slug)?.tagline}</p>}<div className="card-actions"><Link className="card-more" href={`/produkt/${p.slug}`}>Details →</Link><InquiryButton slug={p.slug} className="card-inquiry" label="+ Anfrage"/></div></div>{p.badge&&<span className="badge">{p.badge}</span>}</article>}

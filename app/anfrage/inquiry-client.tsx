@@ -31,17 +31,18 @@ export default function InquiryClient() {
     const product = products.find((p) => p.slug === item.slug);
     return product ? [{ ...item, product }] : [];
   }), [items]);
-  const total = lines.reduce((sum, line) => sum + line.product.price * line.quantity, 0);
+  const total = lines.reduce((sum, line) => sum + (line.product.price ?? 0) * line.quantity, 0);
+  const allPriced = lines.every((line) => line.product.price != null);
   const update = <K extends keyof Form>(key: K, value: Form[K]) => { setForm((f) => ({ ...f, [key]: value })); setErrors((e) => ({ ...e, [key]: undefined })); };
 
   function buildText() {
     const productLines = lines.length
-      ? lines.map((l) => `- ${l.quantity} × ${l.product.name} (${l.product.category}, ${l.product.material}) – Richtpreis ${formatPrice(l.product.price)} / Stk.`).join('\n')
+      ? lines.map((l) => `- ${l.quantity} × ${l.product.name} (${l.product.category}, ${l.product.material}) – ${l.product.price != null ? `Richtpreis ${formatPrice(l.product.price)} / Stk.` : 'Preis auf Anfrage'}`).join('\n')
       : '- (noch keine Produkte ausgewählt)';
     return [
       'Hallo ROAMETRIC-Team,', '',
       'ich interessiere mich für folgende Produkte:', productLines,
-      lines.length ? `Richtpreis gesamt: ${formatPrice(total)} (unverbindlich)` : '', '',
+      lines.length && allPriced ? `Richtpreis gesamt: ${formatPrice(total)} (unverbindlich)` : '', '',
       form.usage ? `Einsatzbereich / Fahrzeug / Setup: ${form.usage}` : '',
       form.custom ? 'Ich wünsche eine individuelle Anpassung.' : '',
       form.message ? `\nNachricht:\n${form.message}` : '', '',
@@ -97,9 +98,9 @@ export default function InquiryClient() {
               <button type="button" className="remove" onClick={() => removeFromInquiry(line.slug)}>Entfernen</button>
             </div>
           </div>
-          <b>{formatPrice(line.product.price * line.quantity)}</b>
+          <b>{line.product.price != null ? formatPrice(line.product.price * line.quantity) : 'Auf Anfrage'}</b>
         </article>)}</div>
-        <div className="inquiry-total"><span>Richtpreis gesamt</span><b>{formatPrice(total)}</b></div>
+        <div className="inquiry-total"><span>Richtpreis gesamt</span><b>{allPriced ? formatPrice(total) : 'Angebot folgt'}</b></div>
         <Link href="/shop" className="text-link">+ Weitere Produkte hinzufügen</Link>
       </> : <div className="inquiry-empty">
         <h3>Noch keine Produkte ausgewählt.</h3>

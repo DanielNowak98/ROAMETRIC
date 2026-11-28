@@ -7,12 +7,13 @@ import { InquiryButton, useInquiry } from '../../inquiry';
 import { detailFor } from '../../product-details';
 import { Footer, formatPrice, Header, ProductCard } from '../../ui';
 
-type View = 'full' | 'detail' | 'drawing';
+type View = 'full' | 'alt' | 'detail' | 'drawing';
 type Tab = 'beschreibung' | 'daten' | 'anfrage';
 
-function Photo({ p, zoom = 1 }: { p: Product; zoom?: number }) {
-  if (!p.image) return <div className="product-photo product-photo-placeholder" aria-label="Produktbild folgt"><span>{p.category}</span><small>Bild folgt</small></div>;
-  return <div className="product-photo" style={{ backgroundImage: `url('${p.image}')`, backgroundPosition: p.imagePosition || 'center', backgroundSize: p.imageSize || 'cover', transform: zoom !== 1 ? `scale(${zoom})` : undefined }}/>;
+function Photo({ p, zoom = 1, src }: { p: Product; zoom?: number; src?: string }) {
+  const image = src ?? p.image;
+  if (!image) return <div className="product-photo product-photo-placeholder" aria-label="Produktbild folgt"><span>{p.category}</span><small>Bild folgt</small></div>;
+  return <div className="product-photo" style={{ backgroundImage: `url('${image}')`, backgroundPosition: p.imagePosition || 'center', backgroundSize: p.imageSize || 'cover', transform: zoom !== 1 ? `scale(${zoom})` : undefined }}/>;
 }
 
 function Blueprint({ p }: { p: Product }) {
@@ -60,11 +61,12 @@ export default function ProductClient({ product: p }: { product: Product }) {
         <div className="gallery-v3">
           <div className="gallery-thumbs" role="tablist" aria-label="Ansichten">
             <button type="button" role="tab" aria-selected={view === 'full'} className={view === 'full' ? 'active' : ''} onClick={() => setView('full')}><div className="product-visual"><Photo p={p}/></div><span>Gesamt</span></button>
+            {p.images?.[0] && <button type="button" role="tab" aria-selected={view === 'alt'} className={view === 'alt' ? 'active' : ''} onClick={() => setView('alt')}><div className="product-visual"><Photo p={p} src={p.images[0]}/></div><span>Ansicht 2</span></button>}
             {p.image && <button type="button" role="tab" aria-selected={view === 'detail'} className={view === 'detail' ? 'active' : ''} onClick={() => setView('detail')}><div className="product-visual"><Photo p={p} zoom={1.9}/></div><span>Detail</span></button>}
             <button type="button" role="tab" aria-selected={view === 'drawing'} className={view === 'drawing' ? 'active' : ''} onClick={() => setView('drawing')}><div className="thumb-bp">{p.material}</div><span>Daten</span></button>
           </div>
           <div className={`gallery-stage ${zooming ? 'zooming' : ''} ${canZoom ? '' : 'no-zoom'}`} onMouseMove={canZoom ? track : undefined} onMouseEnter={() => setZooming(canZoom)} onMouseLeave={() => setZooming(false)}>
-            {view === 'drawing' ? <Blueprint p={p}/> : <div className="product-visual large"><div className="stage-zoom" style={{ transformOrigin: origin, transform: `scale(${(view === 'detail' ? 1.9 : 1) * (zooming ? 1.6 : 1)})` }}><Photo p={p}/></div></div>}
+            {view === 'drawing' ? <Blueprint p={p}/> : <div className="product-visual large"><div className="stage-zoom" style={{ transformOrigin: origin, transform: `scale(${(view === 'detail' ? 1.9 : 1) * (zooming ? 1.6 : 1)})` }}><Photo p={p} src={view === 'alt' ? p.images?.[0] : undefined}/></div></div>}
             {p.badge && <span className="badge">{p.badge}</span>}
             {canZoom && <span className="stage-hint" aria-hidden="true">⤢ Zum Zoomen darüberfahren</span>}
           </div>
@@ -74,7 +76,7 @@ export default function ProductClient({ product: p }: { product: Product }) {
           <h1>{p.name}</h1>
           {detail && <p className="tagline">{detail.tagline}</p>}
           <p className="price">{formatPrice(p.price)}</p>
-          <p className="tax">Richtpreis inkl. MwSt. · finales Angebot nach Anfrage</p>
+          <p className="tax">{p.price != null ? 'Richtpreis inkl. MwSt. · finales Angebot nach Anfrage' : 'Wir melden uns mit einem individuellen Angebot'}</p>
           <p className="lead">{p.desc}</p>
           <ul className="product-benefits">{(detail ? detail.highlights.map((h) => h.title) : (material?.traits ?? ['Passgenau konstruiert'])).slice(0, 3).map((t) => <li key={t}>{t}</li>)}<li>Konstruiert &amp; gefertigt in Deutschland</li></ul>
           <div className="qty-control" role="group" aria-label="Menge">
@@ -106,8 +108,8 @@ export default function ProductClient({ product: p }: { product: Product }) {
             {detail && <div className="highlight-grid">{detail.highlights.map((h, i) => <article key={h.title}><b>{String(i + 1).padStart(2, '0')}</b><h3>{h.title}</h3><p>{h.text}</p></article>)}</div>}
             {detail && <div className="use-cases"><b>IDEAL FÜR</b><div>{detail.useCases.map((u) => <span key={u}>{u}</span>)}</div></div>}
           </div>}
-          {tab === 'daten' && <div><dl className="spec-table">{specRows.map((row) => <div key={row.label}><dt>{row.label}</dt><dd>{row.value}</dd></div>)}</dl>{detail ? <p className="spec-note">Richtwerte des Beispielprodukts — finale Maße folgen mit dem Serienteil.</p> : !p.specs?.length && <p className="spec-note">Abmessungen und Gewicht werden gerade final vermessen und hier ergänzt.</p>}{detail && <div className="tab-cols box-care"><div><h3>Lieferumfang</h3><ul className="check-list">{detail.inBox.map((x) => <li key={x}>{x}</li>)}</ul></div><div><h3>Pflege</h3><p>{detail.care}</p></div></div>}</div>}
-          {tab === 'anfrage' && <div className="tab-cols"><div><h2>So läuft deine Anfrage.</h2><p>Leg das Teil mit der gewünschten Menge in deine Anfrage und schick sie ab. Wir melden uns mit finalem Preis, Lieferzeit und — falls nötig — Anpassungsvorschlägen für dein Setup.</p><Link className="text-link" href="/anfrage">Zur Anfrage →</Link></div><div className="material-note"><span className="material-code">{formatPrice(p.price)}</span><h3>Richtpreis inkl. MwSt.</h3><ul><li>Finales Angebot nach Anfrage</li><li>Individuelle Varianten möglich</li><li>Fertigung in Deutschland</li></ul></div></div>}
+          {tab === 'daten' && <div><dl className="spec-table">{specRows.map((row) => <div key={row.label}><dt>{row.label}</dt><dd>{row.value}</dd></div>)}</dl>{detail ? <p className="spec-note">Maße aus den CAD-Daten, gerundet.</p> : !p.specs?.length && <p className="spec-note">Abmessungen und Gewicht werden gerade final vermessen und hier ergänzt.</p>}{detail && <div className="tab-cols box-care"><div><h3>Lieferumfang</h3><ul className="check-list">{detail.inBox.map((x) => <li key={x}>{x}</li>)}</ul></div><div><h3>Pflege</h3><p>{detail.care}</p></div></div>}</div>}
+          {tab === 'anfrage' && <div className="tab-cols"><div><h2>So läuft deine Anfrage.</h2><p>Leg das Teil mit der gewünschten Menge in deine Anfrage und schick sie ab. Wir melden uns mit finalem Preis, Lieferzeit und — falls nötig — Anpassungsvorschlägen für dein Setup.</p><Link className="text-link" href="/anfrage">Zur Anfrage →</Link></div><div className="material-note"><span className="material-code">{formatPrice(p.price)}</span><h3>{p.price != null ? 'Richtpreis inkl. MwSt.' : 'Individuelles Angebot'}</h3><ul><li>Finales Angebot nach Anfrage</li><li>Individuelle Varianten möglich</li><li>Fertigung in Deutschland</li></ul></div></div>}
         </div>
       </section>
       <section className="related">
