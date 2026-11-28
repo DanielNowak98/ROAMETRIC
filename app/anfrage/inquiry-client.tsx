@@ -1,6 +1,6 @@
 'use client';
 import Link from '../link';
-import { useMemo, useState, type FormEvent } from 'react';
+import { useEffect, useMemo, useState, type FormEvent } from 'react';
 import { categories, products } from '../data';
 import { clearInquiry, removeFromInquiry, setInquiryQuantity, useInquiry } from '../inquiry';
 import { formatPrice, ProductVisual } from '../ui';
@@ -15,6 +15,17 @@ export default function InquiryClient() {
   const [errors, setErrors] = useState<Partial<Record<keyof Form, string>>>({});
   const [sentText, setSentText] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+  const [spare, setSpare] = useState(false);
+
+  // /anfrage?thema=ersatzteil füllt das Formular für eine Ersatzteil-Anfrage vor.
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      if (new URLSearchParams(window.location.search).get('thema') !== 'ersatzteil') return;
+      setSpare(true);
+      setForm((f) => ({ ...f, custom: true, usage: f.usage || 'Ersatzteil nach Vorlage', message: f.message || 'Gesuchtes Teil:\nWo ist es verbaut (Fahrzeug/Möbel/Gerät, Hersteller, Baujahr):\nWichtigste Maße:\nWas muss das Teil aushalten (Last, Sonne, Wasser, Wärme):\nGewünschte Stückzahl:\n\nFotos mit Maßstab hänge ich an diese E-Mail an.' }));
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
 
   const lines = useMemo(() => items.flatMap((item) => {
     const product = products.find((p) => p.slug === item.slug);
@@ -98,6 +109,7 @@ export default function InquiryClient() {
     </div>
 
     <form className="inquiry-form" onSubmit={submit} noValidate>
+      {spare && <div className="spare-note" role="note"><b>ERSATZTEIL-ANFRAGE</b><p>Fülle die Vorlage unten aus. Fotos mit Maßstab hängst du in deinem E-Mail-Programm an, bevor du die Anfrage abschickst.</p></div>}
       <div className="inquiry-step"><b>2</b><div><h2>Deine Kontaktdaten</h2><p>Damit wir dir ein passendes Angebot schicken können.</p></div></div>
       <label>Name *<input value={form.name} onChange={(e) => update('name', e.target.value)} autoComplete="name" aria-invalid={!!errors.name}/>{errors.name && <small className="error">{errors.name}</small>}</label>
       <label>E-Mail *<input type="email" value={form.email} onChange={(e) => update('email', e.target.value)} autoComplete="email" aria-invalid={!!errors.email}/>{errors.email && <small className="error">{errors.email}</small>}</label>
